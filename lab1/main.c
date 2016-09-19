@@ -1,23 +1,24 @@
 /* This file is not complete.  You should fill it in with your
    solution to the programming exercise. */
 #include <stdio.h>
+#include <string.h>
 #include "prog1.h"
 #include "slp.h"
 int maxargs(A_stm stm);
 void interp(A_stm stm);
 
-// Add by myself
-int expListArgs(A_expList expList);
-Table_ interpPrintStm(A_stm stm, Table_ t);
-
 typedef struct table *Table_;
 struct table {string id; int value; Table_ tail;};
+struct IntAndTable {int value; Table_ t;};
+
 Table_ Table(string id, int value, struct table *tail);
 Table_ interpStm(A_stm stm, Table_ t);
 int lookup(Table_ t, string key);
-
-struct IntAndTable {int value; Table_ t;};
 struct IntAndTable interpExp(A_exp exp, Table_ t);
+int expListArgs(A_expList expList);
+Table_ interpPrintStm(A_stm stm, Table_ t);
+struct IntAndTable interpOpExp(A_exp opExp, Table_ t);
+void interp(A_stm stm);
 
 Table_ Table(string id, int value, struct table *tail) {
  Table_ t = checked_malloc(sizeof(struct table));
@@ -28,13 +29,14 @@ Table_ Table(string id, int value, struct table *tail) {
 }
 
 Table_ interpStm(A_stm stm, Table_ t) {
-	IntAndTable iat;
+  Table_ tmp;
+	struct IntAndTable iat;
 	A_expList expList;
 
 	switch (stm->kind) {
 		case A_compoundStm:
-			t = interpStm(stm->u.compound.stm1, t);
-			return interpStm(stm->u.compound.stm1, t);
+			tmp = interpStm(stm->u.compound.stm1, t);
+			return interpStm(stm->u.compound.stm2, tmp);
 		case A_assignStm:
 			iat = interpExp(stm->u.assign.exp, t);
 			return Table(stm->u.assign.id, iat.value, iat.t);
@@ -47,7 +49,7 @@ Table_ interpStm(A_stm stm, Table_ t) {
 				expList = expList->u.pair.tail;
 			}
 			iat = interpExp(expList->u.last, t);
-			printf("%d ", iat.value);
+			printf("%d\n", iat.value);
 			return iat.t;
 		default:
 			break;
@@ -66,11 +68,12 @@ int lookup(Table_ t, string key) {
 }
 
 struct IntAndTable interpExp(A_exp exp, Table_ t) {
-	IntAndTable iat;
+  Table_ tmp;
+	struct IntAndTable iat;
 
 	switch (exp->kind) {
 		case A_idExp:
-			iat.value = lookup(exp->u.id, t);
+			iat.value = lookup(t, exp->u.id);
 			iat.t = t;
 			return iat;
 		case A_numExp:
@@ -80,15 +83,15 @@ struct IntAndTable interpExp(A_exp exp, Table_ t) {
 		case A_opExp:
 			return interpOpExp(exp, t);
 		case A_eseqExp:
-			t = interpStm(exp->u.eseq.stm, t);
-			return interpExp(exp->u.eseq.exp, t);
+			tmp = interpStm(exp->u.eseq.stm, t);
+			return interpExp(exp->u.eseq.exp, tmp);
 		default:
 			break;
 	}
 }
 
 struct IntAndTable interpOpExp(A_exp opExp, Table_ t) {
-	IntAndTable tmp, iat;
+	struct IntAndTable tmp, iat;
 	tmp = interpExp(opExp->u.op.left, t);
 	iat = interpExp(opExp->u.op.right, tmp.t);
 
@@ -97,7 +100,7 @@ struct IntAndTable interpOpExp(A_exp opExp, Table_ t) {
 			iat.value += tmp.value;
 			break;
 		case A_minus:
-			iat.value -= tmp.value;
+			iat.value = tmp.value - iat.value;
 			break;
 		case A_times:
 			iat.value *= tmp.value;
@@ -112,11 +115,17 @@ struct IntAndTable interpOpExp(A_exp opExp, Table_ t) {
 	return iat;
 }
 
+void interp(A_stm stm) {
+  interpStm(stm, NULL);
+}
+
+int flag, tmp;
+
 int expArgs(A_exp exp) {
 	if (exp->kind == A_eseqExp) {
 		return maxargs(exp->u.eseq.stm) + expArgs(exp->u.eseq.exp);
 	} else {
-		return 1;
+		return flag ? 1 : 0;
 	}
 }
 
@@ -125,7 +134,12 @@ int expListArgs(A_expList expList) {
 		case A_pairExpList:
 			return expArgs(expList->u.pair.head) + expListArgs(expList->u.pair.tail);
 		case A_lastExpList:
-			return expArgs(expList->u.last);
+      if (flag) {
+        tmp = expArgs(expList->u.last);
+        flag--;
+        return tmp;
+      }
+      return 0;
 		default:
 			break;
 	}
@@ -133,12 +147,14 @@ int expListArgs(A_expList expList) {
 }
 
 int maxargs(A_stm stm) {
+  flag = 0;
 	switch (stm->kind) {
 		case A_compoundStm:
 			return maxargs(stm->u.compound.stm1) + maxargs(stm->u.compound.stm2);
 		case A_assignStm:
 			return expArgs(stm->u.assign.exp);
 		case A_printStm:
+      flag++;
 			return expListArgs(stm->u.print.exps);
 		default:
 			break;
