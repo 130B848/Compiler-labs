@@ -11,14 +11,20 @@ typedef struct table *Table_;
 struct table {string id; int value; Table_ tail;};
 struct IntAndTable {int value; Table_ t;};
 
+typedef struct stack *Stack_;
+struct stack {int value; Stack_ below;};
+Stack_ Stack(int value, struct stack *below);
+Stack_ StackInsert(int value, struct stack *below);
+int StackTop();
+void StackPop();
+void expArgs(A_exp exp);
+void expListArgs(A_expList expList);
 Table_ Table(string id, int value, struct table *tail);
 Table_ interpStm(A_stm stm, Table_ t);
 int lookup(Table_ t, string key);
 struct IntAndTable interpExp(A_exp exp, Table_ t);
-int expListArgs(A_expList expList);
 Table_ interpPrintStm(A_stm stm, Table_ t);
 struct IntAndTable interpOpExp(A_exp opExp, Table_ t);
-void interp(A_stm stm);
 
 Table_ Table(string id, int value, struct table *tail) {
  Table_ t = checked_malloc(sizeof(struct table));
@@ -119,47 +125,74 @@ void interp(A_stm stm) {
   interpStm(stm, NULL);
 }
 
-int flag, tmp;
+static int flag = 0, max = 0;
+static Stack_ top = NULL;
 
-int expArgs(A_exp exp) {
+Stack_ StackInsert(int value, struct stack *below) {
+  Stack_ stk = checked_malloc(sizeof(sizeof(struct stack)));
+  stk->value = value;
+  stk->below = below;
+  return stk;
+}
+
+void StackPop() {
+  if (top) {
+    top = top->below;
+  }
+}
+
+int StackTop() {
+  return top ? top->value : 0;
+}
+
+void expArgs(A_exp exp) {
 	if (exp->kind == A_eseqExp) {
-		return maxargs(exp->u.eseq.stm) + expArgs(exp->u.eseq.exp);
+		maxargs(exp->u.eseq.stm);
+    expArgs(exp->u.eseq.exp);
 	} else {
-		return flag ? 1 : 0;
+    if (top) {
+      top->value++;
+    }
 	}
 }
 
-int expListArgs(A_expList expList) {
+void expListArgs(A_expList expList) {
 	switch (expList->kind) {
 		case A_pairExpList:
-			return expArgs(expList->u.pair.head) + expListArgs(expList->u.pair.tail);
+			expArgs(expList->u.pair.head);
+      expListArgs(expList->u.pair.tail);
+      break;
 		case A_lastExpList:
-      if (flag) {
-        tmp = expArgs(expList->u.last);
-        flag--;
-        return tmp;
-      }
-      return 0;
+      expArgs(expList->u.last);
+      max = max > StackTop() ? max : StackTop();
+      StackPop();
+      break;
 		default:
 			break;
 	}
-	return 0;
 }
 
 int maxargs(A_stm stm) {
   flag = 0;
+  top = NULL;
+
 	switch (stm->kind) {
 		case A_compoundStm:
-			return maxargs(stm->u.compound.stm1) + maxargs(stm->u.compound.stm2);
+			maxargs(stm->u.compound.stm1);
+      maxargs(stm->u.compound.stm2);
+      break;
 		case A_assignStm:
-			return expArgs(stm->u.assign.exp);
+		  expArgs(stm->u.assign.exp);
+      break;
 		case A_printStm:
-      flag++;
-			return expListArgs(stm->u.print.exps);
+      top = StackInsert(0, top);
+			expListArgs(stm->u.print.exps);
+      break;
 		default:
 			break;
 	}
-	return 0;
+
+	return max;
 }
 
 /*
