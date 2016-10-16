@@ -102,7 +102,7 @@ nil         {adjust(); return NIL;}
 [0-9]+      {adjust(); yylval.ival = atoi(yytext); return INT;}
 
   /* String literal */
-\"          {adjust(); bzero(buf, MAXLEN); str_pos = charPos - 1; BEGIN(STRINGS);}
+\"          {adjust(); bzero(buf, MAXLEN); str_pos = EM_tokPos; BEGIN(STRINGS);}
 
 <STRINGS>{
     <<EOF>> {EM_error(EM_tokPos, "ERROR: Unclosed string."); yyterminate();}
@@ -112,4 +112,4 @@ nil         {adjust(); return NIL;}
 }
 
   /* Other cases are all illegal */
-.	        {adjust(); EM_error(EM_tokPos,"ERROR: Illegal input.");}
+.	        {adjust(); EM_error(EM_tokPos, "ERROR: Illegal input.");}
