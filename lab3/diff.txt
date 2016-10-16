@@ -1,0 +1,4415 @@
+1,160d0
+< ./testcases/merge.tig:3.7: any
+< ./testcases/merge.tig:3.11: EQ =
+< ./testcases/merge.tig:3.14: any
+< ./testcases/merge.tig:3.20: int
+< ./testcases/merge.tig:3.23: any = {any : int}
+< ./testcases/merge.tig:4.6: buffer
+< ./testcases/merge.tig:4.16: getchar
+< ./testcases/merge.tig:6.10: readint
+< ./testcases/merge.tig:6.18: any
+< ./testcases/merge.tig:6.23: any
+< ./testcases/merge.tig:6.30: int
+< ./testcases/merge.tig:6.34: EQ =
+< ./testcases/merge.tig:7.10: i
+< ./testcases/merge.tig:8.15: isdigit
+< ./testcases/merge.tig:8.23: s
+< ./testcases/merge.tig:8.27: string
+< ./testcases/merge.tig:8.37: int
+< ./testcases/merge.tig:8.41: EQ =
+< ./testcases/merge.tig:9.5: ord
+< ./testcases/merge.tig:9.9: buffer
+< ./testcases/merge.tig:9.18: ord
+< ./testcases/merge.tig:9.29: ord
+< ./testcases/merge.tig:9.33: buffer
+< ./testcases/merge.tig:9.42: ord
+< ./testcases/merge.tig:10.15: skipto
+< ./testcases/merge.tig:10.24: EQ =
+< ./testcases/merge.tig:11.14: buffer
+< ./testcases/merge.tig:11.20: EQ =
+< ./testcases/merge.tig:11.27: buffer
+< ./testcases/merge.tig:11.33: EQ =
+< ./testcases/merge.tig:13.13: buffer
+< ./testcases/merge.tig:13.23: getchar
+< ./testcases/merge.tig:14.6: skipto
+< ./testcases/merge.tig:15.6: any
+< ./testcases/merge.tig:15.10: any
+< ./testcases/merge.tig:15.17: isdigit
+< ./testcases/merge.tig:15.25: buffer
+< ./testcases/merge.tig:16.12: isdigit
+< ./testcases/merge.tig:16.20: buffer
+< ./testcases/merge.tig:17.12: i
+< ./testcases/merge.tig:17.17: i
+< ./testcases/merge.tig:17.22: ord
+< ./testcases/merge.tig:17.26: buffer
+< ./testcases/merge.tig:17.34: ord
+< ./testcases/merge.tig:17.44: buffer
+< ./testcases/merge.tig:17.54: getchar
+< ./testcases/merge.tig:18.6: i
+< ./testcases/merge.tig:21.7: list
+< ./testcases/merge.tig:21.12: EQ =
+< ./testcases/merge.tig:21.15: first
+< ./testcases/merge.tig:21.22: int
+< ./testcases/merge.tig:21.27: rest
+< ./testcases/merge.tig:21.33: list
+< ./testcases/merge.tig:21.37: list = {first: int, rest: list}
+< ./testcases/merge.tig:23.11: readlist
+< ./testcases/merge.tig:23.24: list
+< ./testcases/merge.tig:23.29: EQ =
+< ./testcases/merge.tig:24.13: any
+< ./testcases/merge.tig:24.20: any
+< ./testcases/merge.tig:24.24: any
+< ./testcases/merge.tig:24.27: EQ =
+< ./testcases/merge.tig:25.13: i
+< ./testcases/merge.tig:25.18: readint
+< ./testcases/merge.tig:25.26: any
+< ./testcases/merge.tig:26.12: any
+< ./testcases/merge.tig:26.16: any
+< ./testcases/merge.tig:27.15: list
+< ./testcases/merge.tig:27.20: first
+< ./testcases/merge.tig:27.25: EQ =
+< ./testcases/merge.tig:27.26: i
+< ./testcases/merge.tig:27.28: rest
+< ./testcases/merge.tig:27.32: EQ =
+< ./testcases/merge.tig:27.33: readlist
+< ./testcases/merge.tig:31.11: merge
+< ./testcases/merge.tig:31.17: a
+< ./testcases/merge.tig:31.20: list
+< ./testcases/merge.tig:31.26: b
+< ./testcases/merge.tig:31.29: list
+< ./testcases/merge.tig:31.37: list
+< ./testcases/merge.tig:31.42: EQ =
+< ./testcases/merge.tig:32.7: a
+< ./testcases/merge.tig:32.8: EQ =
+< ./testcases/merge.tig:32.18: b
+< ./testcases/merge.tig:33.12: b
+< ./testcases/merge.tig:33.13: EQ =
+< ./testcases/merge.tig:33.23: a
+< ./testcases/merge.tig:34.12: a
+< ./testcases/merge.tig:34.14: first
+< ./testcases/merge.tig:34.22: b
+< ./testcases/merge.tig:34.24: first
+< ./testcases/merge.tig:35.12: list
+< ./testcases/merge.tig:35.17: first
+< ./testcases/merge.tig:35.22: EQ =
+< ./testcases/merge.tig:35.23: a
+< ./testcases/merge.tig:35.25: first
+< ./testcases/merge.tig:35.31: rest
+< ./testcases/merge.tig:35.35: EQ =
+< ./testcases/merge.tig:35.36: merge
+< ./testcases/merge.tig:35.42: a
+< ./testcases/merge.tig:35.44: rest
+< ./testcases/merge.tig:35.49: b
+< ./testcases/merge.tig:36.12: list
+< ./testcases/merge.tig:36.17: first
+< ./testcases/merge.tig:36.22: EQ =
+< ./testcases/merge.tig:36.23: b
+< ./testcases/merge.tig:36.25: first
+< ./testcases/merge.tig:36.31: rest
+< ./testcases/merge.tig:36.35: EQ =
+< ./testcases/merge.tig:36.36: merge
+< ./testcases/merge.tig:36.42: a
+< ./testcases/merge.tig:36.44: b
+< ./testcases/merge.tig:36.46: rest
+< ./testcases/merge.tig:38.11: printint
+< ./testcases/merge.tig:38.20: i
+< ./testcases/merge.tig:38.23: int
+< ./testcases/merge.tig:38.28: EQ =
+< ./testcases/merge.tig:39.16: f
+< ./testcases/merge.tig:39.18: i
+< ./testcases/merge.tig:39.20: int
+< ./testcases/merge.tig:39.25: EQ =
+< ./testcases/merge.tig:39.30: i
+< ./testcases/merge.tig:40.13: f
+< ./testcases/merge.tig:40.15: i
+< ./testcases/merge.tig:40.22: print
+< ./testcases/merge.tig:40.28: chr
+< ./testcases/merge.tig:40.32: i
+< ./testcases/merge.tig:40.34: i
+< ./testcases/merge.tig:40.42: ord
+< ./testcases/merge.tig:41.10: i
+< ./testcases/merge.tig:41.20: print
+< ./testcases/merge.tig:41.32: f
+< ./testcases/merge.tig:41.35: i
+< ./testcases/merge.tig:42.15: i
+< ./testcases/merge.tig:42.24: f
+< ./testcases/merge.tig:42.26: i
+< ./testcases/merge.tig:43.12: print
+< ./testcases/merge.tig:46.11: printlist
+< ./testcases/merge.tig:46.21: l
+< ./testcases/merge.tig:46.24: list
+< ./testcases/merge.tig:46.30: EQ =
+< ./testcases/merge.tig:47.7: l
+< ./testcases/merge.tig:47.8: EQ =
+< ./testcases/merge.tig:47.18: print
+< ./testcases/merge.tig:49.10: printint
+< ./testcases/merge.tig:49.19: l
+< ./testcases/merge.tig:49.21: first
+< ./testcases/merge.tig:49.29: print
+< ./testcases/merge.tig:49.41: printlist
+< ./testcases/merge.tig:49.51: l
+< ./testcases/merge.tig:49.53: rest
+< ./testcases/merge.tig:51.8: list1
+< ./testcases/merge.tig:51.17: readlist
+< ./testcases/merge.tig:52.8: list2
+< ./testcases/merge.tig:52.18: buffer
+< ./testcases/merge.tig:52.26: getchar
+< ./testcases/merge.tig:52.37: readlist
+< ./testcases/merge.tig:56.5: printlist
+< ./testcases/merge.tig:56.15: merge
+< ./testcases/merge.tig:56.21: list1
+< ./testcases/merge.tig:56.27: list2
+165,218c5
+<      namety(any = {any : int}
+<  var buffer := getchar()
+< 
+< function readint(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>      namety(any,
+221,328c8,9
+<         field(any : int}
+<  var buffer := getchar()
+< 
+< function readint(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<          int}
+<  var buffer := getchar()
+< 
+< function readint(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>         field(any,
+>          int,
+333,438c14,15
+<     varDec(buffer := getchar()
+< 
+< function readint(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<      callExp(getchar()
+< 
+< function readint(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>     varDec(buffer,
+>      callExp(getchar,
+444,494c21
+<        fundec(readint(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>        fundec(readint,
+496,597c23,24
+<          field(any: any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<           any) : int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>          field(any,
+>           any,
+600,650c27
+<         int =
+<  let var i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>         int,
+653,702c30
+<           varDec(i := 0
+<      function isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>           varDec(i,
+708,756c36
+<              fundec(isdigit(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>              fundec(isdigit,
+758,855c38,39
+<                field(s : string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<                 string) : int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                field(s,
+>                 string,
+858,906c42
+<               int =
+< 		  ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               int,
+910,957c46
+<                 callExp(ord(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 callExp(ord,
+960,1007c49
+<                    simpleVar(buffer)>=ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                    simpleVar(buffer)),
+1009,1056c51
+<                 callExp(ord("0") & ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 callExp(ord,
+1058c53
+<                   stringExp( ),
+---
+>                   stringExp(0),
+1062,1109c57
+<                 callExp(ord(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 callExp(ord,
+1112,1159c60
+<                    simpleVar(buffer)<=ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                    simpleVar(buffer)),
+1161,1208c62
+<                 callExp(ord("9")
+<      function skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 callExp(ord,
+1210c64
+<                   stringExp( ),
+---
+>                   stringExp(9),
+1214,1260c68
+<               fundec(skipto() =
+<        while buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               fundec(skipto,
+1267,1312c75
+<                    simpleVar(buffer=" " | buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                    simpleVar(buffer)),
+1318,1364c81,83
+<                    simpleVar(buffer="\n"
+<          do buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+<                   stringExp( ))),
+---
+>                    simpleVar(buffer)),
+>                   stringExp(
+> ))),
+1366,1455c85,86
+<                  simpleVar(buffer := getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                  callExp(getchar()
+<   in skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  simpleVar(buffer),
+>                  callExp(getchar,
+1462,1505c93
+<            callExp(skipto();
+<      any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>            callExp(skipto,
+1510,1638c98,100
+<               simpleVar(any.any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<               any := isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<              callExp(isdigit(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               simpleVar(any),
+>               any),
+>              callExp(isdigit,
+1641,1683c103
+<                 simpleVar(buffer);
+<      while isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                 simpleVar(buffer)),
+1687,1728c107
+<               callExp(isdigit(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               callExp(isdigit,
+1731,1772c110
+<                  simpleVar(buffer)
+<        do (i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                  simpleVar(buffer)),
+1777,1817c115
+<                  simpleVar(i := i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+---
+>                  simpleVar(i),
+1825,1865c123
+<                      simpleVar(i*10+ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                      simpleVar(i)),
+1867,1907c125
+<                    callExp(ord(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                    callExp(ord,
+1910,1950c128
+<                       simpleVar(buffer)-ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                       simpleVar(buffer)),
+1952,1992c130
+<                   callExp(ord("0"); buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                   callExp(ord,
+1994c132
+<                     stringExp( ),
+---
+>                     stringExp(0),
+1998,2079c136,137
+<                   simpleVar(buffer := getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                   callExp(getchar());
+<      i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                   simpleVar(buffer),
+>                   callExp(getchar,
+2085,2124c143
+<                simpleVar(i
+<  end
+< 
+<  type list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                simpleVar(i)),
+2130,2166c149
+<         namety(list = {first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>         namety(list,
+2169,2242c152,153
+<            field(first: int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<             int, rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>            field(first,
+>             int,
+2245,2318c156,157
+<             field(rest: list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<              list}
+< 
+<  function readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>             field(rest,
+>              list,
+2325,2359c164
+<          fundec(readlist() : list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>          fundec(readlist,
+2361,2395c166
+<           list =
+<     let var any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>           list,
+2398,2465c169,170
+<             varDec(any := any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<              recordExp(any{any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>             varDec(any,
+>              recordExp(any,
+2467,2500c172
+<                efield(any=0}
+<         var i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                efield(any,
+2505,2570c177,178
+<              varDec(i := readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<               callExp(readint(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>              varDec(i,
+>               callExp(readint,
+2573,2605c181
+<                  simpleVar(any)
+<      in if any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                  simpleVar(any)),
+2614,2708c190,192
+<                 simpleVar(any.any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                 any
+<          then list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+<               recordExp(list{first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 simpleVar(any),
+>                 any)),
+>               recordExp(list,
+2710,2740c194
+<                 efield(first=i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 efield(first,
+2742,2772c196
+<                   simpleVar(i,rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ))),
+---
+>                   simpleVar(i))),
+2774,2835c198,199
+<                  efield(rest=readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<                   callExp(readlist()}
+<          else nil
+<     end
+< 
+<  function merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  efield(rest,
+>                   callExp(readlist,
+2841,2867c205
+<           fundec(merge(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>           fundec(merge,
+2869,2922c207,208
+<             field(a: list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<              list, b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>             field(a,
+>              list,
+2925,2978c211,212
+<              field(b: list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<               list) : list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>              field(b,
+>               list,
+2981,3007c215
+<            list =
+<    if a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>            list,
+3012,3037c220
+<               simpleVar(a=nil then b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>               simpleVar(a)),
+3040,3065c223
+<              simpleVar(b
+<    else if b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>              simpleVar(b)),
+3070,3094c228
+<                simpleVar(b=nil then a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                simpleVar(b)),
+3097,3121c231
+<               simpleVar(a
+<    else if a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>               simpleVar(a)),
+3127,3174c237,238
+<                  simpleVar(a.first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                  first < b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                  simpleVar(a),
+>                  first)),
+3177,3247c241,243
+<                  simpleVar(b.first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                  first
+<       then list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ))),
+<               recordExp(list{first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  simpleVar(b),
+>                  first))),
+>               recordExp(list,
+3249,3271c245
+<                 efield(first=a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 efield(first,
+3274,3319c248,249
+<                    simpleVar(a.first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                    first,rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ))),
+---
+>                    simpleVar(a),
+>                    first))),
+3321,3366c251,252
+<                  efield(rest=merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<                   callExp(merge(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  efield(rest,
+>                   callExp(merge,
+3370,3415c256,257
+<                       simpleVar(a.rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                       rest,b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                       simpleVar(a),
+>                       rest)),
+3418,3440c260
+<                       simpleVar(b)}
+<       else list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                       simpleVar(b)),
+3443,3464c263
+<               recordExp(list{first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               recordExp(list,
+3466,3487c265
+<                 efield(first=b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 efield(first,
+3490,3533c268,269
+<                    simpleVar(b.first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                    first,rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ))),
+---
+>                    simpleVar(b),
+>                    first))),
+3535,3578c271,272
+<                  efield(rest=merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<                   callExp(merge(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  efield(rest,
+>                   callExp(merge,
+3581,3602c275
+<                      simpleVar(a,b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                      simpleVar(a)),
+3606,3649c279,280
+<                        simpleVar(b.rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                        rest)}
+< 
+<  function printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                        simpleVar(b),
+>                        rest)),
+3653,3672c284
+<            fundec(printint(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>            fundec(printint,
+3674,3713c286,287
+<              field(i: int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<               int) =
+<   let function f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>              field(i,
+>               int,
+3720,3738c294
+<                 fundec(f(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 fundec(f,
+3740,3777c296,297
+<                   field(i:int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<                    int) = if i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                   field(i,
+>                    int,
+3784,3802c304
+<                     simpleVar(i>0
+< 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                     simpleVar(i)),
+3806,3823c308
+<                     callExp(f(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                     callExp(f,
+3828,3845c313
+<                         simpleVar(i/10); print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                         simpleVar(i)),
+3849,3866c317
+<                      callExp(print(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                      callExp(print,
+3868,3885c319
+<                        callExp(chr(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                        callExp(chr,
+3892,3909c326
+<                             simpleVar(i-i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                             simpleVar(i)),
+3915,3932c332
+<                               simpleVar(i/10*10+ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                               simpleVar(i)),
+3935,3952c335
+<                           callExp(ord("0"))))
+<    in if i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                           callExp(ord,
+3954c337
+<                             stringExp( ),
+---
+>                             stringExp(0),
+3968,3984c351
+<                   simpleVar(i<0 then (print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                   simpleVar(i)),
+3988,4004c355
+<                   callExp(print("-"); f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                   callExp(print,
+4006c357
+<                     stringExp( ),
+---
+>                     stringExp(-),
+4009,4025c360
+<                    callExp(f(-i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                    callExp(f,
+4031,4047c366
+<                        simpleVar(i))
+<       else if i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ))),
+---
+>                        simpleVar(i))),
+4054,4069c373
+<                    simpleVar(i>0 then f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                    simpleVar(i)),
+4071,4086c375
+<                  callExp(f(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  callExp(f,
+4089,4104c378
+<                     simpleVar(i)
+<       else print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                     simpleVar(i)),
+4106,4120c380
+<                  callExp(print("0")
+<   end
+< 
+<  function printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  callExp(print,
+4122c382
+<                    stringExp( ),
+---
+>                    stringExp(0),
+4126,4137c386
+<             fundec(printlist(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>             fundec(printlist,
+4139,4162c388,389
+<               field(l: list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<                list) =
+<    if l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               field(l,
+>                list,
+4169,4179c396
+<                 simpleVar(l=nil then print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                 simpleVar(l)),
+4181,4191c398
+<               callExp(print("\n")
+<    else (printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>               callExp(print,
+4193c400,401
+<                 stringExp( ),
+---
+>                 stringExp(
+> ),
+4197,4206c405
+<                 callExp(printint(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                 callExp(printint,
+4210,4229c409,410
+<                     simpleVar(l.first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                     first); print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                     simpleVar(l),
+>                     first)),
+4232,4241c413
+<                  callExp(print(" "); printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                  callExp(print,
+4246,4255c418
+<                   callExp(printlist(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>                   callExp(printlist,
+4259,4278c422,423
+<                       simpleVar(l.rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<                       rest))
+< 
+<    var list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< )),
+---
+>                       simpleVar(l),
+>                       rest)),
+4283,4298c428,429
+<         varDec(list1 := readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+<          callExp(readlist()
+<    var list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>         varDec(list1,
+>          callExp(readlist,
+4302,4308c433
+<          varDec(list2 := (buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>          varDec(list2,
+4312,4325c437,438
+<              simpleVar(buffer:=getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ),
+<              callExp(getchar(); readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>              simpleVar(buffer),
+>              callExp(getchar,
+4328,4334c441
+<              callExp(readlist())
+< 
+< 
+<   /* BODY OF MAIN PROGRAM */
+<  in printlist(merge(list1,list2))
+< end
+< ,
+---
+>              callExp(readlist,
+4341,4343c448
+<     callExp(printlist(merge(list1,list2))
+< end
+< ,
+---
+>     callExp(printlist,
+4345,4347c450
+<       callExp(merge(list1,list2))
+< end
+< ,
+---
+>       callExp(merge,
+4350,4352c453
+<          simpleVar(list1,list2))
+< end
+< )),
+---
+>          simpleVar(list1)),
+4355,4357c456
+<           simpleVar(list2))
+< end
+< )),
+---
+>           simpleVar(list2)),
+[*_*]: Output Mismatch [merge.tig]
