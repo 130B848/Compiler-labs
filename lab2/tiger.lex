@@ -108,6 +108,7 @@ nil         {adjust(); return NIL;}
     <<EOF>> {EM_error(EM_tokPos, "ERROR: Unclosed string."); yyterminate();}
     \"      {adjust(); yylval.sval = strlen(buf) ? buf : "(null)"; EM_tokPos = str_pos; BEGIN(INITIAL); return STRING;}
     \\n     {adjust(); EM_newline(); strcat(buf, "\n");}
+    \\t     {adjust(); strcat(buf, "\t");}
     .       {adjust(); strcat(buf, yytext);}
 }
 
