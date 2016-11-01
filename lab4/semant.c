@@ -27,12 +27,12 @@ struct expty transVar(S_table venv, S_table tenv, A_var v) {
             }
         }
         case A_fieldVar: {
-            struct expty prev = transVar(venv, tenv, v->u.field.var);
-            if (prev.ty->kind != Ty_Record) {
+            struct expty var = transVar(venv, tenv, v->u.field.var);
+            if (var.ty->kind != Ty_Record) {
                 EM_error(v->pos, "record type variable expected");
             }
 
-            Ty_fieldList fieldList = prev.ty->u.record;
+            Ty_fieldList fieldList = var.ty->u.record;
             while (fieldList && fieldList->head->name != v->u.field.sym) {
                 fieldList = fieldList->tail;
             }
@@ -47,7 +47,7 @@ struct expty transVar(S_table venv, S_table tenv, A_var v) {
             struct expty var = transVar(venv, tenv, v->u.subscript.var);
             if (var.ty->kind != Ty_array) {
                 EM_error(v->pos, "array type variable expected");
-                return expTy(NULL, NULL);
+                return expTy(NULL, Ty_Record(NULL));
             }
 
             struct expty exp = transExp(venv, tenv, v->u.subscript.exp);
@@ -59,13 +59,32 @@ struct expty transVar(S_table venv, S_table tenv, A_var v) {
             return expTy(NULL, actual_ty(var.ty->u.array));
         }
         default: {
+            EM_error(v->pos, "transVar error");
             return expTy(NULL, NULL);
         }
     }
 }
 
 struct expty transExp(S_table venv, S_table tenv, A_exp a) {
+    switch (a->kind) {
+        case A_opExp: {
+            A_oper oper = a->u.op.oper;
+            struct expty left = transExp(venv, tenv, a->u.op.left);
+            struct expty right = transExp(venv, tenv, a->u.op.right);
 
+            if (oper == A_plusOp || oper == A_minusOp ||
+                oper == A_timesOp || oper == A_divideOp) {
+                if (left.ty->kind != Ty_int) {
+                    EM_error(a->u.op.left->pos, "integer variable expected");
+                }
+                if (right.ty->kind != Ty_int) {
+                    EM_error(a->u.op.right->pos, "integer variable expected");
+                }
+            } else {
+                
+            }
+        }
+    }
 }
 
 void transDec(S_table venv, S_table tenv, A_dec d) {
