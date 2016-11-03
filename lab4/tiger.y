@@ -149,7 +149,7 @@ assignExp : var ASSIGN exp            {$$ = A_AssignExp(EM_tokPos, $1, $3);}
         ;
 
 ifExp   :   IF  exp THEN exp ELSE exp {$$ = A_IfExp(EM_tokPos, $2, $4, $6);}
-        |   IF  exp THEN exp          {$$ = A_IfExp(EM_tokPos, $2, $4, A_NilExp(EM_tokPos));}
+        |   IF  exp THEN exp          {$$ = A_IfExp(EM_tokPos, $2, $4, NULL);}
         |   exp OR  exp               {$$ = A_IfExp(EM_tokPos, $1, A_IntExp(EM_tokPos, 1), $3);}
         |   exp AND exp               {$$ = A_IfExp(EM_tokPos, $1, $3, A_IntExp(EM_tokPos, 0));}
         ;
