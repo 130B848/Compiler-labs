@@ -29,18 +29,29 @@ struct F_access_ {
     } u;
 };
 
-static F_access InFrame(int offset);
-static F_access InReg(Temp_temp reg);
+static F_access InFrame(int offset) {
+    F_access acc = checked_malloc(sizeof(struct F_access_));
+    acc->kind = inFrame;
+    acc->u.offset = offset;
+    return acc;
+}
+
+static F_access InReg(Temp_temp reg) {
+    F_access acc = checked_malloc(sizeof(struct F_access_));
+    acc->kind = inReg;
+    acc->u.reg = reg;
+    return acc;
+}
 
 F_accessList F_AccessList(F_access head, F_accessList tail) {
-    F_accessList al = (F_accessList)checked_malloc(sizeof(F_accessList_));
+    F_accessList al = (F_accessList)checked_malloc(sizeof(struct F_accessList_));
     al->head = head;
     al->tail = tail;
     return al;
 }
 
 F_frag F_StringFrag(Temp_label label, string str) {
-	F_frag strFrag = checked_malloc(sizeof(F_frag_));
+	F_frag strFrag = checked_malloc(sizeof(struct F_frag_));
     strFrag->kind = F_stringFrag;
     strFrag->u.stringg.label = label;
     strFrag->u.stringg.str = str;
@@ -48,7 +59,7 @@ F_frag F_StringFrag(Temp_label label, string str) {
 }
 
 F_frag F_ProcFrag(T_stm body, F_frame frame) {
-	F_frag procFrag checked_malloc(sizeof(F_frag_));
+	F_frag procFrag = checked_malloc(sizeof(struct F_frag_));
     procFrag->kind = F_procFrag;
     procFrag->u.proc.body = body;
     procFrag->u.proc.frame = frame;
@@ -56,7 +67,7 @@ F_frag F_ProcFrag(T_stm body, F_frame frame) {
 }
 
 F_fragList F_FragList(F_frag head, F_fragList tail) {
-	F_fragList fl = checked_malloc(sizeof(F_fragList_));
+	F_fragList fl = checked_malloc(sizeof(struct F_fragList_));
     fl->head = head;
     fl->tail = tail;
     return fl;
@@ -96,18 +107,16 @@ Temp_label F_name(F_frame f) {
 
 const int F_wordSize = 4;
 
-static Temp_temp framePtr = NULL;
-
 Temp_temp F_FP(void) {
+static Temp_temp framePtr = NULL;
     if (!framePtr) {
         framePtr = Temp_newtemp();
     }
     return framePtr;
 }
 
-static Temp_temp rv = NULL;
-
 Temp_temp F_RV(void) {
+    static Temp_temp rv = NULL;
     if (!rv) {
         rv = Temp_newtemp();
     }
@@ -115,7 +124,7 @@ Temp_temp F_RV(void) {
 }
 
 F_frame F_newFrame(Temp_label name, U_boolList formals) {
-    F_frame f = (F_frame)checked_malloc(sizeof(F_frame_));
+    F_frame f = (F_frame)checked_malloc(sizeof(struct F_frame_));
     f->name = name;
     f->formals = NULL;
     F_access tmp = NULL;
@@ -124,12 +133,12 @@ F_frame F_newFrame(Temp_label name, U_boolList formals) {
             tmp = InReg(Temp_newtemp());
         } else {
             tmp = InFrame(f->frameSize);
-            frameSize += F_wordSize;
+            f->frameSize += F_wordSize;
         }
 
         f->formals = F_AccessList(tmp, f->formals);
     }
-    return formals;
+    return f;
 }
 
 T_exp F_externalCall(string s, T_expList args) {

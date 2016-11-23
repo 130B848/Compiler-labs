@@ -31,13 +31,13 @@ fi
 	do		
 		if [ ${tcase##*.} = "tig" ]; then
 			tfileName=${tcase##*/}
-			#echo $tfileName
+			# echo $tfileName
 			rm -f _ref.txt _tmp.txt .tmp.txt
 			./$BIN $TESTCASEDIR/$tfileName >& _tmp.txt
 
 			diff $DIFFOPTION _tmp.txt $REFOUTDIR/${tfileName%.*}.out >& .tmp.txt
 			if [ -s .tmp.txt ]; then
-				#cat .tmp.txt
+				# cat .tmp.txt
 				echo -e "${RED_COLOR}Your output:${RES}"
 				cat _tmp.txt
 				echo -e "${RED_COLOR}Expected output:${RES}"

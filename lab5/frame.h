@@ -3,6 +3,8 @@
 
 #ifndef FRAME_H
 #define FRAME_H
+#include "temp.h"
+#include "tree.h"
 
 typedef struct F_frame_ *F_frame;
 typedef struct F_access_ *F_access;
@@ -41,7 +43,7 @@ Temp_temp F_FP(void);
 //Temp_temp F_SP(void); 
 //Temp_temp F_ZERO(void);
 //Temp_temp F_RA(void);
-//Temp_temp F_RV(void);
+Temp_temp F_RV(void);
 F_frame F_newFrame(Temp_label name, U_boolList formals);
 T_exp F_externalCall(string s, T_expList args);
 //F_frag F_string(Temp_label lab, string str);
