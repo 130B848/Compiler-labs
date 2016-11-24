@@ -260,7 +260,7 @@ struct expty transExp(S_table venv, S_table tenv, A_exp a, Tr_level level) {
             if (a->u.iff.elsee) {
                 elsee = transExp(venv, tenv, a->u.iff.elsee, level);
                 if (!Ty_cmp(then.ty, elsee.ty)) {
-                    // EM_error(a->pos, "then exp and else exp type mismatch");
+                    EM_error(a->pos, "then exp and else exp type mismatch");
                 }
                 return expTy(Tr_ifExp(test.exp, then.exp, elsee.exp), then.ty);
             } else {
@@ -363,10 +363,11 @@ Tr_exp transDec(S_table venv, S_table tenv, A_dec d, Tr_level level) {
     switch (d->kind) {
         case A_functionDec: {
             A_fundecList fdl = d->u.function;
-            Ty_ty resultTy = Ty_Void();
+            Ty_ty resultTy;
             Ty_tyList formalTys;
             U_boolList bl = NULL;
             for (; fdl; fdl = fdl->tail) {
+                resultTy = Ty_Void();
                 //if (S_look(venv, fdl->head->name)) {
                 //    EM_error(d->pos, "two functions have the same name");
                 //    return;
@@ -410,8 +411,8 @@ Tr_exp transDec(S_table venv, S_table tenv, A_dec d, Tr_level level) {
                     // EM_error(0, "tt->kind %d, ee->kind %d", body.ty->kind, func->u.fun.result->kind);
                     if (func->u.fun.result->kind == Ty_void)
                         EM_error(fdl->head->pos, "procedure returns value");
-                    // else
-                    //     EM_error(fdl->head->pos, "invalid return type in function %s", S_name(fdl->head->name));
+                    else
+                        EM_error(fdl->head->pos, "invalid return type in function %s", S_name(fdl->head->name));
                 }
                 Tr_procEntryExit(funEntry->u.fun.level, body.exp, acls);
                 S_endScope(venv);
@@ -459,8 +460,8 @@ Tr_exp transDec(S_table venv, S_table tenv, A_dec d, Tr_level level) {
                 if (checkCycle && (resultTy->kind != Ty_name)) {
                     checkCycle = 0;
                 }
-                if (!nl->tail && (resultTy->kind == Ty_name)) {
-                    // EM_error(d->pos, "no actual type defined");
+                if (!nl->tail && (actual_ty(resultTy)->kind == Ty_name)) {
+                    EM_error(d->pos, "no actual type defined");
                 }
                 Ty_ty namety = S_look(tenv, nl->head->name);
                 namety->u.name.ty = actual_ty(resultTy);
