@@ -5,8 +5,9 @@
 #define FRAME_H
 #include "temp.h"
 #include "tree.h"
+#include "assem.h"
 
-// Temp_map F_tempMap;
+Temp_tempList F_calldefs(); 
 
 typedef struct F_frame_ *F_frame;
 typedef struct F_access_ *F_access;
@@ -33,7 +34,7 @@ typedef struct F_fragList_ *F_fragList;
 struct F_fragList_ {F_frag head; F_fragList tail;};
 F_fragList F_FragList(F_frag head, F_fragList tail);
 
-//Temp_map F_tempMap;
+Temp_map F_tempMap;
 //Temp_tempList F_registers(void);
 string F_getlabel(F_frame frame);
 T_exp F_Exp(F_access acc, T_exp framePtr);
@@ -42,7 +43,7 @@ F_accessList F_formals(F_frame f);
 Temp_label F_name(F_frame f);
 extern const int F_wordSize;
 Temp_temp F_FP(void);
-//Temp_temp F_SP(void); 
+Temp_temp F_SP(void); 
 //Temp_temp F_ZERO(void);
 //Temp_temp F_RA(void);
 Temp_temp F_RV(void);

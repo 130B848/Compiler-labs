@@ -1,6 +1,7 @@
 #ifndef TRANSLATE_H
 #define TRANSLATE_H
-
+#include "temp.h"
+#include "frame.h"
 /* Lab5: your code below */
 typedef struct Tr_expList_ *Tr_expList;
 
@@ -8,9 +9,21 @@ typedef struct Tr_exp_ *Tr_exp;
 
 typedef struct Tr_access_ *Tr_access;
 
-//typedef struct Tr_accessList_ *Tr_accessList;
+typedef struct Tr_accessList_ *Tr_accessList;
+
+struct Tr_accessList_ {
+	Tr_access head;
+	Tr_accessList tail;
+};
 
 typedef struct Tr_level_ *Tr_level;
+
+struct Tr_level_ {
+	//Lab5: your code here
+    Tr_level parent;
+    F_frame frame;
+    Temp_label name;
+};
 
 Tr_accessList Tr_AccessList(Tr_access head, Tr_accessList tail);
 
