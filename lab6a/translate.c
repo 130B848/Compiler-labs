@@ -133,7 +133,7 @@ static struct Cx unCx(Tr_exp e) {
     switch (e->kind) {
         case Tr_ex:{
             struct Cx cx;
-            cx.stm = T_Cjump(T_eq, e->u.ex, T_Const(1), NULL, NULL);
+            cx.stm = T_Cjump(T_eq, e->u.ex, T_Const(0), NULL, NULL);
             cx.trues = PatchList(&(cx.stm->u.CJUMP.true), NULL);
             cx.falses = PatchList(&(cx.stm->u.CJUMP.false), NULL);
             return cx;
@@ -330,9 +330,6 @@ Tr_exp Tr_recordExp(int num, Tr_expList fields) {
 }
 
 Tr_exp Tr_seqExp(Tr_expList expList) {
-    if (!expList) {
-        return NULL;
-    }
 //    T_stm stm = unNx(expList->head);
 //
 //    for (expList = expList->tail; expList; expList = expList->tail) {
@@ -341,10 +338,10 @@ Tr_exp Tr_seqExp(Tr_expList expList) {
 //    return Tr_Nx(stm);
     T_exp resl = unEx(expList->head);
     for (expList = expList->tail; expList; expList = expList->tail) {
-        if (expList->head)
+        if (expList->head) {
             resl = T_Eseq(T_Exp(unEx(expList->head)), resl);
+        }
     }
-    // EM_error(0, "Tr_seqExp get here");
     return Tr_Ex(resl);
 }
 
@@ -413,14 +410,26 @@ Tr_exp Tr_ifExp(Tr_exp test, Tr_exp then, Tr_exp elsee) {
             default:
                 break;
         }
-
-        result = Tr_Ex(T_Eseq(cond.stm,
-                        T_Eseq(T_Label(trues),
-                            T_Eseq(thenStm,
-                                T_Eseq(joinJump,
-                                    T_Eseq(T_Label(falses),
-                                        T_Eseq(elseStm,
-                                            T_Eseq(joinJump, T_Temp(r)))))))));
+        
+        if (cond.stm->kind == T_SEQ && cond.stm->u.SEQ.left->kind == T_CJUMP) {
+            patchList tl = PatchList(&cond.stm->u.SEQ.left->u.CJUMP.true, NULL);
+            patchList fl = PatchList(&cond.stm->u.SEQ.right->u.CJUMP.false, NULL);
+            result = Tr_Cx(tl, fl, T_Seq(cond.stm,
+                            T_Seq(T_Label(trues),
+                                T_Seq(thenStm,
+                                    T_Seq(joinJump,
+                                        T_Seq(T_Label(falses),
+                                            T_Seq(elseStm,
+                                                T_Seq(joinJump, T_Label(join)))))))));
+        }
+        
+//        result = Tr_Ex(T_Eseq(cond.stm,
+//                        T_Eseq(T_Label(trues),
+//                            T_Eseq(thenStm,
+//                                T_Eseq(joinJump,
+//                                    T_Eseq(T_Label(falses),
+//                                        T_Eseq(elseStm,
+//                                            T_Eseq(joinJump, T_Temp(r)))))))));
     }
     return result;
 }
@@ -447,7 +456,8 @@ Tr_exp Tr_whileExp(Tr_exp test, Tr_exp body, Tr_exp done) {
                     T_Seq(T_Label(bodyl),
                         T_Seq(unNx(body),
                             T_Seq(T_Label(testl),
-                                T_Seq(T_Cjump(T_eq, unEx(test), T_Const(0), unEx(done)->u.NAME, bodyl),
+                                T_Seq(T_Cjump(T_eq, unEx(test), T_Const(0), 
+                                        unEx(done)->u.NAME, bodyl),
                                     T_Seq(T_Label(unEx(done)->u.NAME), NULL)))))));
 }
 

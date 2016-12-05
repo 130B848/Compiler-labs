@@ -269,7 +269,7 @@ struct expty transExp(S_table venv, S_table tenv, A_exp a, Tr_level level) {
                 if (then.ty->kind != Ty_void) {
                     EM_error(a->pos, "if-then exp's body must produce no value");
                 }
-                return expTy(Tr_ifExp(test.exp, then.exp, NULL), then.ty);
+                return expTy(Tr_ifExp(test.exp, then.exp, NULL), Ty_Void());
             }
         }
         case A_whileExp: {
