@@ -138,6 +138,9 @@ void AS_print(FILE *out, AS_instr i, Temp_map m)
     fprintf(out, "%s", r);
     break;
   }
+  if (i) {
+    fprintf(stdout, "not null pointer in AS_print\n");
+  }
 }
 
 /* c should be COL_color; temporarily it is not */
