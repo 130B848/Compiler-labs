@@ -283,8 +283,7 @@ struct expty transExp(S_table venv, S_table tenv, A_exp a, Tr_level level) {
             if (body.ty->kind == Ty_int) {
                 EM_error(a->pos, "while body must produce no value");
             }
-            //return expTy(Tr_whileExp(test.exp, body.exp, done), Ty_Void());
-            return expTy(Tr_nilExp(), Ty_Void());
+            return expTy(Tr_whileExp(test.exp, body.exp, done), Ty_Void());
         }
         case A_forExp: {
             struct expty lo = transExp(venv, tenv, a->u.forr.lo, level);
@@ -303,8 +302,7 @@ struct expty transExp(S_table venv, S_table tenv, A_exp a, Tr_level level) {
             body = transExp(venv, tenv, a->u.forr.body, level);
             checkFor = NULL;
             S_endScope(venv);
-            //return expTy(Tr_forExp(lo.exp, hi.exp, body.exp, acc), Ty_Void());
-            return expTy(Tr_nilExp(), Ty_Void());
+            return expTy(Tr_forExp(lo.exp, hi.exp, body.exp, acc), Ty_Void());
         }
         case A_breakExp: {
             return expTy(Tr_breakExp(), Ty_Void());
