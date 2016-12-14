@@ -1,0 +1,1060 @@
+canon.c trace label = L62
+a format: assem=L62, dst=(nil), src=(nil)
+result=L62
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x221e650, src=(nil)
+result=mov $0x0, 126
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x221e6e0
+result=push 126
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x221e790
+result=call initRecord
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x221eaf0, src=0x221ea60
+result=mov initRecord, 100
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x221ed40, src=(nil)
+result=mov $0x0, 134
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x221edf0, src=0x221edd0
+result=mov 0x0(134), 133
+not null pointer in AS_print
+a format: assem=add $0x4, `d0, dst=0x221eea0, src=0x221ee80
+result=add $0x4, 132
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x221efc0, src=0x221ef30
+result=mov 132, 123
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x221f240, src=(nil)
+result=mov $0x0, 139
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x221f2f0, src=0x221f2d0
+result=mov 0x0(139), 138
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x221f380
+result=push 138
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x221f430
+result=call L3
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x221f550, src=0x221f4c0
+result=mov L3, 122
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x221f6e0
+result=mov 122, (123)
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x221fa10, src=(nil)
+result=mov $0x0, 148
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x221fac0, src=0x221faa0
+result=mov 0x0(148), 147
+not null pointer in AS_print
+a format: assem=add $0x8, `d0, dst=0x221fb70, src=0x221fb50
+result=add $0x8, 146
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x221fc90, src=0x221fc00
+result=mov 146, 121
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x221ff10, src=(nil)
+result=mov $0x0, 153
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x221ffc0, src=0x221ffa0
+result=mov 0x0(153), 152
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2220050
+result=push 152
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2220100
+result=call L27
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2220220, src=0x2220190
+result=mov L27, 120
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x22203b0
+result=mov 120, (121)
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2220590, src=(nil)
+result=mov $0x0, 159
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2220640, src=0x2220620
+result=mov 0x0(159), 158
+not null pointer in AS_print
+a format: assem=add $0xc, `d0, dst=0x22206f0, src=0x22206d0
+result=add $0xc, 157
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2220810, src=0x2220780
+result=mov 157, 119
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x22209f0, src=(nil)
+result=mov $0x0, 163
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2220aa0, src=0x2220a80
+result=mov 0x0(163), 162
+not null pointer in AS_print
+a format: assem=add $0x4, `d0, dst=0x2220b50, src=0x2220b30
+result=add $0x4, 161
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2220c70, src=0x2220be0
+result=mov 161, 118
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2220ef0, src=(nil)
+result=mov $0x0, 168
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2220fa0, src=0x2220f80
+result=mov 0x0(168), 167
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2221030
+result=push 167
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x22210e0
+result=call L3
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2221200, src=0x2221170
+result=mov L3, 117
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x2221390
+result=mov 117, (118)
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2221610, src=(nil)
+result=mov $0x0, 175
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x22216c0, src=0x22216a0
+result=mov 0x0(175), 174
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2221750
+result=push 174
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2221800
+result=call L27
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x2221920
+result=mov L27, (119)
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2221a90, src=(nil)
+result=mov $0x0, 178
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2221b40, src=0x2221b20
+result=mov 0x0(178), 177
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2221c60, src=0x2221bd0
+result=mov 177, 116
+not null pointer in AS_print
+a format: assem=mov $0xc, `d0, dst=0x2221ee0, src=(nil)
+result=mov $0xc, 183
+not null pointer in AS_print
+a format: assem=mov 0xc(`s0), `d0, dst=0x2221f90, src=0x2221f70
+result=mov 0xc(183), 182
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2222020
+result=push 182
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x22221b0, src=(nil)
+result=mov $0x8, 185
+not null pointer in AS_print
+a format: assem=mov 0x8(`s0), `d0, dst=0x2222260, src=0x2222240
+result=mov 0x8(185), 184
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22222f0
+result=push 184
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2222480, src=(nil)
+result=mov $0x0, 187
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2222530, src=0x2222510
+result=mov 0x0(187), 186
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22225c0
+result=push 186
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2222670
+result=call L28
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2222790, src=0x2222700
+result=mov L28, 115
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22229a0
+result=push 115
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2222ac0
+result=push 116
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2222b70
+result=call L30
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2222cc0, src=(nil)
+result=jmp L61
+not null pointer in AS_print
+a format: assem=L61, dst=(nil), src=(nil)
+result=L61
+not null pointer in AS_print
+canon.c trace label = L64
+canon.c trace label = L59
+canon.c trace label = L58
+canon.c trace label = L65
+a format: assem=L64, dst=(nil), src=(nil)
+result=L64
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2225aa0, src=(nil)
+result=mov $0x0, 195
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x2225b50
+result=cmp 100, 195
+not null pointer in AS_print
+a format: assem=je `j0, dst=(nil), src=(nil)
+result=je L58
+not null pointer in AS_print
+a format: assem=L59, dst=(nil), src=(nil)
+result=L59
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2225ef0, src=(nil)
+result=mov $0x0, 199
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2225fa0, src=0x2225f80
+result=mov 0x0(199), 198
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2226030
+result=push 198
+not null pointer in AS_print
+a format: assem=mov $0xc, `d0, dst=0x22261c0, src=(nil)
+result=mov $0xc, 201
+not null pointer in AS_print
+a format: assem=mov 0xc(`s0), `d0, dst=0x2226270, src=0x2226250
+result=mov 0xc(201), 200
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2226300
+result=push 200
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x22263b0
+result=call L29
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22265f0
+result=push L57
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2226710
+result=push 101
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x22267c0
+result=call L0
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x2226a40, src=(nil)
+result=mov $0x4, 209
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x2226af0, src=0x2226ad0
+result=mov 0x4(209), 208
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2226b80
+result=push 208
+not null pointer in AS_print
+a format: assem=mov $0x10, `d0, dst=0x2226d10, src=(nil)
+result=mov $0x10, 211
+not null pointer in AS_print
+a format: assem=mov 0x10(`s0), `d0, dst=0x2226dc0, src=0x2226da0
+result=mov 0x10(211), 210
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2226e50
+result=push 210
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2226f00
+result=call L30
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2227050, src=(nil)
+result=jmp L60
+not null pointer in AS_print
+a format: assem=L58, dst=(nil), src=(nil)
+result=L58
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2227300
+result=push L56
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2227420
+result=push 101
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x22274d0
+result=call L0
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2227620, src=(nil)
+result=jmp L60
+not null pointer in AS_print
+a format: assem=L65, dst=(nil), src=(nil)
+result=L65
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2227850, src=(nil)
+result=jmp L63
+not null pointer in AS_print
+a format: assem=L63, dst=(nil), src=(nil)
+result=L63
+not null pointer in AS_print
+canon.c trace label = L67
+canon.c trace label = L54
+canon.c trace label = L51
+canon.c trace label = L53
+canon.c trace label = L50
+canon.c trace label = L68
+canon.c trace label = L69
+a format: assem=L67, dst=(nil), src=(nil)
+result=L67
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x222b8d0, src=(nil)
+result=mov $0x0, 222
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x222b980, src=0x222b960
+result=mov 0x0(222), 221
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x222ba80, src=(nil)
+result=mov $0x0, 223
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x222bb30
+result=cmp 221, 223
+not null pointer in AS_print
+a format: assem=jl `j0, dst=(nil), src=(nil)
+result=jl L53
+not null pointer in AS_print
+a format: assem=L54, dst=(nil), src=(nil)
+result=L54
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x222bdc0, src=(nil)
+result=mov $0x0, 225
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x222be70, src=0x222be50
+result=mov 0x0(225), 224
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x222bf70, src=(nil)
+result=mov $0x0, 226
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x222c020
+result=cmp 224, 226
+not null pointer in AS_print
+a format: assem=jg `j0, dst=(nil), src=(nil)
+result=jg L50
+not null pointer in AS_print
+a format: assem=L51, dst=(nil), src=(nil)
+result=L51
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222c380
+result=push L49
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222c4a0
+result=push 101
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x222c550
+result=call L0
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x222c6a0, src=(nil)
+result=jmp L52
+not null pointer in AS_print
+a format: assem=L53, dst=(nil), src=(nil)
+result=L53
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222c950
+result=push L48
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222ca70
+result=push 101
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x222cb20
+result=call L0
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x222ce10, src=(nil)
+result=mov $0x0, 240
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x222cec0, src=0x222cea0
+result=mov 0x0(240), 239
+not null pointer in AS_print
+a format: assem=sub $0x0, `d0, dst=0x222cf70, src=0x222cf50
+result=sub $0x0, 238
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222d000
+result=push 238
+not null pointer in AS_print
+a format: assem=mov $0xc, `d0, dst=0x222d190, src=(nil)
+result=mov $0xc, 242
+not null pointer in AS_print
+a format: assem=mov 0xc(`s0), `d0, dst=0x222d240, src=0x222d220
+result=mov 0xc(242), 241
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222d2d0
+result=push 241
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x222d380
+result=call L43
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x222d4d0, src=(nil)
+result=jmp L55
+not null pointer in AS_print
+a format: assem=L50, dst=(nil), src=(nil)
+result=L50
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x222d7c0, src=(nil)
+result=mov $0x0, 247
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x222d870, src=0x222d850
+result=mov 0x0(247), 246
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222d900
+result=push 246
+not null pointer in AS_print
+a format: assem=mov $0xc, `d0, dst=0x222da90, src=(nil)
+result=mov $0xc, 249
+not null pointer in AS_print
+a format: assem=mov 0xc(`s0), `d0, dst=0x222db40, src=0x222db20
+result=mov 0xc(249), 248
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x222dbd0
+result=push 248
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x222dc80
+result=call L43
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x222ddd0, src=(nil)
+result=jmp L52
+not null pointer in AS_print
+a format: assem=L68, dst=(nil), src=(nil)
+result=L68
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x222e000, src=(nil)
+result=jmp L55
+not null pointer in AS_print
+a format: assem=L69, dst=(nil), src=(nil)
+result=L69
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x222e230, src=(nil)
+result=jmp L66
+not null pointer in AS_print
+a format: assem=L66, dst=(nil), src=(nil)
+result=L66
+not null pointer in AS_print
+canon.c trace label = L71
+canon.c trace label = L46
+canon.c trace label = L45
+a format: assem=L71, dst=(nil), src=(nil)
+result=L71
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2231eb0, src=(nil)
+result=mov $0x0, 261
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2231f60, src=0x2231f40
+result=mov 0x0(261), 260
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2232060, src=(nil)
+result=mov $0x0, 262
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x2232110
+result=cmp 260, 262
+not null pointer in AS_print
+a format: assem=jg `j0, dst=(nil), src=(nil)
+result=jg L45
+not null pointer in AS_print
+a format: assem=L46, dst=(nil), src=(nil)
+result=L46
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2232380, src=(nil)
+result=jmp L70
+not null pointer in AS_print
+a format: assem=L45, dst=(nil), src=(nil)
+result=L45
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x22326e0, src=(nil)
+result=mov $0x0, 268
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2232790, src=0x2232770
+result=mov 0x0(268), 267
+not null pointer in AS_print
+a format: assem=div $0xa, `d0, dst=0x2232840, src=0x2232820
+result=div $0xa, 266
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22328d0
+result=push 266
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x2232a60, src=(nil)
+result=mov $0x4, 270
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x2232b10, src=0x2232af0
+result=mov 0x4(270), 269
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2232ba0
+result=push 269
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2232c50
+result=call L43
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2232dc0, src=(nil)
+result=mov $0x0, 272
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2232e70, src=0x2232e50
+result=mov 0x0(272), 271
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2232f90, src=0x2232f00
+result=mov 271, 259
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2233100, src=(nil)
+result=mov $0x0, 275
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x22331b0, src=0x2233190
+result=mov 0x0(275), 274
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x22332d0, src=0x2233240
+result=mov 274, 258
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2233590, src=(nil)
+result=mov $0x0, 281
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2233640, src=0x2233620
+result=mov 0x0(281), 280
+not null pointer in AS_print
+a format: assem=div $0xa, `d0, dst=0x22336f0, src=0x22336d0
+result=div $0xa, 279
+not null pointer in AS_print
+a format: assem=imul $0xa, `d0, dst=0x22337a0, src=0x2233780
+result=imul $0xa, 278
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2233930, src=(nil)
+result=mov $0x0, 283
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x22339e0, src=0x22339c0
+result=mov 0x0(283), 282
+not null pointer in AS_print
+a format: assem=sub `s0, `d0, dst=0x2233a90, src=0x2233a70
+result=sub 282, 277
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2233bb0, src=0x2233b20
+result=mov 277, 257
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2233df0
+result=push L44
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2233f80, src=(nil)
+result=mov $0x0, 289
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2234030, src=0x2234010
+result=mov 0x0(289), 288
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22340c0
+result=push 288
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2234170
+result=call L4
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2234290, src=0x2234200
+result=mov L4, 256
+not null pointer in AS_print
+a format: assem=add `s0, `d0, dst=0x22345c0, src=0x22345a0
+result=add 257, 293
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2234650
+result=push 293
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2234770
+result=push 258
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2234820
+result=call L5
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2234940, src=0x22348b0
+result=mov L5, 255
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2234b50
+result=push 255
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2234c70
+result=push 259
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2234d20
+result=call L0
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2234e70, src=(nil)
+result=jmp L46
+not null pointer in AS_print
+a format: assem=L70, dst=(nil), src=(nil)
+result=L70
+not null pointer in AS_print
+canon.c trace label = L73
+canon.c trace label = L41
+canon.c trace label = L38
+canon.c trace label = L35
+canon.c trace label = L40
+canon.c trace label = L37
+canon.c trace label = L34
+canon.c trace label = L74
+canon.c trace label = L75
+canon.c trace label = L76
+a format: assem=L73, dst=(nil), src=(nil)
+result=L73
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223c680, src=(nil)
+result=mov $0x0, 308
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x223c730
+result=cmp 100, 308
+not null pointer in AS_print
+a format: assem=je `j0, dst=(nil), src=(nil)
+result=je L40
+not null pointer in AS_print
+a format: assem=L41, dst=(nil), src=(nil)
+result=L41
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223c9c0, src=(nil)
+result=mov $0x0, 310
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x223ca70
+result=cmp 100, 310
+not null pointer in AS_print
+a format: assem=je `j0, dst=(nil), src=(nil)
+result=je L37
+not null pointer in AS_print
+a format: assem=L38, dst=(nil), src=(nil)
+result=L38
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223cd00, src=(nil)
+result=mov $0x0, 312
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x223cdb0, src=0x223cd90
+result=mov 0x0(312), 311
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223cf20, src=(nil)
+result=mov $0x0, 314
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x223cfd0, src=0x223cfb0
+result=mov 0x0(314), 313
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x223d080
+result=cmp 311, 313
+not null pointer in AS_print
+a format: assem=jl `j0, dst=(nil), src=(nil)
+result=jl L34
+not null pointer in AS_print
+a format: assem=L35, dst=(nil), src=(nil)
+result=L35
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x223d3b0, src=(nil)
+result=mov $0x8, 317
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x223d440
+result=push 317
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x223d4f0
+result=call initRecord
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x223d610, src=0x223d580
+result=mov initRecord, 108
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223d780, src=(nil)
+result=mov $0x0, 320
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x223d830, src=0x223d810
+result=mov 0x0(320), 319
+not null pointer in AS_print
+a format: assem=mov `s1, 0x4(`s0), dst=(nil), src=0x223d950
+result=mov 319, 0x4(108)
+not null pointer in AS_print
+a format: assem=add $0x4, `d0, dst=0x223dae0, src=0x223dac0
+result=add $0x4, 322
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x223dc00, src=0x223db70
+result=mov 322, 304
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x223de80, src=(nil)
+result=mov $0x4, 328
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x223df30, src=0x223df10
+result=mov 0x4(328), 327
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x223dfc0
+result=push 327
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223e150, src=(nil)
+result=mov $0x0, 330
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x223e200, src=0x223e1e0
+result=mov 0x0(330), 329
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x223e290
+result=push 329
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x223e420, src=(nil)
+result=mov $0x8, 332
+not null pointer in AS_print
+a format: assem=mov 0x8(`s0), `d0, dst=0x223e4d0, src=0x223e4b0
+result=mov 0x8(332), 331
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x223e560
+result=push 331
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x223e610
+result=call L28
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x223e730, src=0x223e6a0
+result=mov L28, 303
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x223e8c0
+result=mov 303, (304)
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x223ea80, src=(nil)
+result=jmp L36
+not null pointer in AS_print
+a format: assem=L40, dst=(nil), src=(nil)
+result=L40
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x223ec60, src=(nil)
+result=mov $0x4, 339
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x223ed10, src=0x223ecf0
+result=mov 0x4(339), 338
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x223ee60, src=(nil)
+result=jmp L42
+not null pointer in AS_print
+a format: assem=L37, dst=(nil), src=(nil)
+result=L37
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223f040, src=(nil)
+result=mov $0x0, 342
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x223f0f0, src=0x223f0d0
+result=mov 0x0(342), 341
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x223f240, src=(nil)
+result=jmp L39
+not null pointer in AS_print
+a format: assem=L34, dst=(nil), src=(nil)
+result=L34
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x223f4c0, src=(nil)
+result=mov $0x8, 346
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x223f550
+result=push 346
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x223f600
+result=call initRecord
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x223f720, src=0x223f690
+result=mov initRecord, 107
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x223f890, src=(nil)
+result=mov $0x0, 349
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x223f940, src=0x223f920
+result=mov 0x0(349), 348
+not null pointer in AS_print
+a format: assem=mov `s1, 0x4(`s0), dst=(nil), src=0x223fa60
+result=mov 348, 0x4(107)
+not null pointer in AS_print
+a format: assem=add $0x4, `d0, dst=0x223fbf0, src=0x223fbd0
+result=add $0x4, 351
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x223fd10, src=0x223fc80
+result=mov 351, 306
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x223ff90, src=(nil)
+result=mov $0x4, 357
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x2240040, src=0x2240020
+result=mov 0x4(357), 356
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22400d0
+result=push 356
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x2240260, src=(nil)
+result=mov $0x4, 359
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x2240310, src=0x22402f0
+result=mov 0x4(359), 358
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22403a0
+result=push 358
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x2240530, src=(nil)
+result=mov $0x8, 361
+not null pointer in AS_print
+a format: assem=mov 0x8(`s0), `d0, dst=0x22405e0, src=0x22405c0
+result=mov 0x8(361), 360
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2240670
+result=push 360
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2240720
+result=call L28
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2240840, src=0x22407b0
+result=mov L28, 305
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x22409d0
+result=mov 305, (306)
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2240b90, src=(nil)
+result=jmp L36
+not null pointer in AS_print
+a format: assem=L74, dst=(nil), src=(nil)
+result=L74
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2240dc0, src=(nil)
+result=jmp L39
+not null pointer in AS_print
+a format: assem=L75, dst=(nil), src=(nil)
+result=L75
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2240ff0, src=(nil)
+result=jmp L42
+not null pointer in AS_print
+a format: assem=L76, dst=(nil), src=(nil)
+result=L76
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2241220, src=(nil)
+result=jmp L72
+not null pointer in AS_print
+a format: assem=L72, dst=(nil), src=(nil)
+result=L72
+not null pointer in AS_print
+canon.c trace label = L78
+canon.c trace label = L32
+canon.c trace label = L31
+canon.c trace label = L79
+a format: assem=L78, dst=(nil), src=(nil)
+result=L78
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2245e20, src=(nil)
+result=mov $0x0, 380
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2245ed0, src=0x2245eb0
+result=mov 0x0(380), 379
+not null pointer in AS_print
+a format: assem=add $0x4, `d0, dst=0x2245f80, src=0x2245f60
+result=add $0x4, 378
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x22460a0, src=0x2246010
+result=mov 378, 377
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x22462b0, src=(nil)
+result=mov $0x4, 384
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2246340
+result=push 384
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x22463f0
+result=call initRecord
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2246510, src=0x2246480
+result=mov initRecord, 104
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2246610, src=(nil)
+result=mov $0x0, 386
+not null pointer in AS_print
+a format: assem=mov `s1, 0x0(`s0), dst=(nil), src=0x2246730
+result=mov 386, 0x0(104)
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x22468c0
+result=mov 104, (377)
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2246aa0, src=(nil)
+result=mov $0x0, 392
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2246b50, src=0x2246b30
+result=mov 0x0(392), 391
+not null pointer in AS_print
+a format: assem=add $0x8, `d0, dst=0x2246c00, src=0x2246be0
+result=add $0x8, 390
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2246d20, src=0x2246c90
+result=mov 390, 376
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x2246fa0, src=(nil)
+result=mov $0x4, 397
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x2247050, src=0x2247030
+result=mov 0x4(397), 396
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22470e0
+result=push 396
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x2247270, src=(nil)
+result=mov $0x4, 399
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x2247320, src=0x2247300
+result=mov 0x4(399), 398
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22473b0
+result=push 398
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2247460
+result=call L11
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2247580, src=0x22474f0
+result=mov L11, 375
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x2247710
+result=mov 375, (376)
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2247880, src=(nil)
+result=mov $0x0, 404
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2247930, src=0x2247910
+result=mov 0x0(404), 403
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2247a30, src=(nil)
+result=mov $0x0, 405
+not null pointer in AS_print
+a format: assem=cmp `s0, `s1, dst=(nil), src=0x2247ae0
+result=cmp 403, 405
+not null pointer in AS_print
+a format: assem=je `j0, dst=(nil), src=(nil)
+result=je L31
+not null pointer in AS_print
+a format: assem=L32, dst=(nil), src=(nil)
+result=L32
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2247dc0, src=(nil)
+result=jmp L33
+not null pointer in AS_print
+a format: assem=L31, dst=(nil), src=(nil)
+result=L31
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x2248040, src=(nil)
+result=mov $0x8, 410
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x22480d0
+result=push 410
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2248180
+result=call initRecord
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x22482a0, src=0x2248210
+result=mov initRecord, 105
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x2248410, src=(nil)
+result=mov $0x8, 413
+not null pointer in AS_print
+a format: assem=mov 0x8(`s0), `d0, dst=0x22484c0, src=0x22484a0
+result=mov 0x8(413), 412
+not null pointer in AS_print
+a format: assem=mov `s1, 0x4(`s0), dst=(nil), src=0x22485e0
+result=mov 412, 0x4(105)
+not null pointer in AS_print
+a format: assem=add $0x4, `d0, dst=0x2248770, src=0x2248750
+result=add $0x4, 415
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2248890, src=0x2248800
+result=mov 415, 374
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x2248b10, src=(nil)
+result=mov $0x0, 421
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x2248bc0, src=0x2248ba0
+result=mov 0x0(421), 420
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x2248c50
+result=push 420
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x2248d00
+result=call L27
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x2248e20, src=0x2248d90
+result=mov L27, 373
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x2248fb0
+result=mov 373, (374)
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x2249170, src=(nil)
+result=jmp L33
+not null pointer in AS_print
+a format: assem=L79, dst=(nil), src=(nil)
+result=L79
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x22493a0, src=(nil)
+result=jmp L77
+not null pointer in AS_print
+a format: assem=L77, dst=(nil), src=(nil)
+result=L77
+not null pointer in AS_print
+canon.c trace label = L81
+a format: assem=L81, dst=(nil), src=(nil)
+result=L81
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x224c7b0, src=(nil)
+result=mov $0x0, 431
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x224c940, src=(nil)
+result=mov $0x4, 433
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x224c9f0, src=0x224c9d0
+result=mov 0x4(433), 432
+not null pointer in AS_print
+a format: assem=mov `s1, 0x8(`s0), dst=(nil), src=0x224ca80
+result=mov 431, 0x8(432)
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x224cd70, src=(nil)
+result=mov $0x4, 438
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x224ce20, src=0x224ce00
+result=mov 0x4(438), 437
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x224ceb0
+result=push 437
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x224cf60
+result=call L13
+not null pointer in AS_print
+a format: assem=mov $0x0, `d0, dst=0x224d140, src=(nil)
+result=mov $0x0, 441
+not null pointer in AS_print
+a format: assem=mov 0x0(`s0), `d0, dst=0x224d1f0, src=0x224d1d0
+result=mov 0x0(441), 440
+not null pointer in AS_print
+a format: assem=add $0x0, `d0, dst=0x224d2a0, src=0x224d280
+result=add $0x0, 439
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x224d3c0, src=0x224d330
+result=mov 439, 430
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x224d640, src=(nil)
+result=mov $0x4, 446
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x224d6f0, src=0x224d6d0
+result=mov 0x4(446), 445
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x224d780
+result=push 445
+not null pointer in AS_print
+a format: assem=mov $0x4, `d0, dst=0x224d910, src=(nil)
+result=mov $0x4, 448
+not null pointer in AS_print
+a format: assem=mov 0x4(`s0), `d0, dst=0x224d9c0, src=0x224d9a0
+result=mov 0x4(448), 447
+not null pointer in AS_print
+a format: assem=push `s0, dst=(nil), src=0x224da50
+result=push 447
+not null pointer in AS_print
+a format: assem=call `s0, dst=0x221e9d0, src=0x224db00
+result=call L12
+not null pointer in AS_print
+a format: assem=mov `s0, `d0, dst=0x224dc20, src=0x224db90
+result=mov L12, 429
+not null pointer in AS_print
+a format: assem=mov `s1, (`s0), dst=(nil), src=0x224ddb0
+result=mov 429, (430)
+not null pointer in AS_print
+a format: assem=mov $0x8, `d0, dst=0x224df90, src=(nil)
+result=mov $0x8, 454
+not null pointer in AS_print
+a format: assem=mov 0x8(`s0), `d0, dst=0x224e040, src=0x224e020
+result=mov 0x8(454), 453
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x224e190, src=(nil)
+result=jmp L80
+not null pointer in AS_print
+a format: assem=L80, dst=(nil), src=(nil)
+result=L80
+not null pointer in AS_print
+canon.c trace label = L83
+a format: assem=L83, dst=(nil), src=(nil)
+result=L83
+not null pointer in AS_print
+a format: assem=jmp `d0, dst=0x224f020, src=(nil)
+result=jmp L82
+not null pointer in AS_print
+a format: assem=L82, dst=(nil), src=(nil)
+result=L82
+not null pointer in AS_print
+canon.c trace label = L85
+canon.c trace label = L17
+canon.c trace label = L16

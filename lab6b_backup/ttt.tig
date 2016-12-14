@@ -1,0 +1,16 @@
+let 
+<<<<<<< HEAD
+    var a := 1
+    /*var i := 2
+    function skipto() = 
+        while i < 3
+            do i := 4*/
+=======
+    /*var a := 1 > 2 & 3 < 4*/
+    var i := 2
+    function skipto() = 
+        while i < 3
+            do i := 4
+>>>>>>> 22cea20997dfe7adb3226fbe3cabb43c679169e3
+in
+end
