@@ -140,7 +140,6 @@ static struct Cx unCx(Tr_exp e) {
         }
         case Tr_nx:
             //cx.stm = e->u.nx->u.SEQ
-            EM_error(0, "unCx Tr_nx case error, left kind = %d", e->u.nx->u.SEQ.right->kind);
             assert(0);
         case Tr_cx:
             return e->u.cx;
@@ -229,14 +228,15 @@ Tr_exp Tr_subscriptVar(Tr_exp base, Tr_exp index) {
 }
 
 Tr_exp Tr_nilExp(void) {
-    static Temp_temp tmp = NULL;
-    if (!tmp) {
-        tmp = Temp_newtemp();
-        T_stm alloc = T_Move(T_Temp(tmp),
-                F_externalCall(String("initRecord"), T_ExpList(T_Const(0), NULL)));
-        return Tr_Ex(T_Eseq(alloc, T_Temp(tmp)));
-    }
-    return Tr_Ex(T_Temp(tmp));
+    //static Temp_temp tmp = NULL;
+    //if (!tmp) {
+    //    tmp = Temp_newtemp();
+    //    T_stm alloc = T_Move(T_Temp(tmp),
+    //            F_externalCall(String("initRecord"), T_ExpList(T_Const(0), NULL)));
+    //    return Tr_Ex(T_Eseq(alloc, T_Temp(tmp)));
+    //}
+    //return Tr_Ex(T_Temp(tmp));
+    return Tr_Ex(T_Const(0));
 }
 
 Tr_exp Tr_intExp(int i) {
@@ -245,7 +245,6 @@ Tr_exp Tr_intExp(int i) {
 
 static F_fragList stringFragList = NULL;
 Tr_exp Tr_stringExp(string str) {
-    // EM_error(0, "Tr_stringExp:");
     Temp_label sl = Temp_newlabel();
     F_frag frag = F_StringFrag(sl, str);
     stringFragList = F_FragList(frag, stringFragList);
@@ -307,10 +306,7 @@ Tr_exp Tr_relOpExp(A_oper oper, Tr_exp left, Tr_exp right) {
             break;
     }
     
-    // TODO: eliminate the pre-doPatch
-    Temp_label t = Temp_newlabel(), f = Temp_newlabel();
-    
-    T_stm stm = T_Cjump(op, unEx(left), unEx(right), t, f);
+    T_stm stm = T_Cjump(op, unEx(left), unEx(right), NULL, NULL);
     patchList trues = PatchList(&stm->u.CJUMP.true, NULL);
     patchList falses = PatchList(&stm->u.CJUMP.false, NULL);
     
@@ -335,12 +331,6 @@ Tr_exp Tr_recordExp(int num, Tr_expList fields) {
 }
 
 Tr_exp Tr_seqExp(Tr_expList expList) {
-//    T_stm stm = unNx(expList->head);
-//
-//    for (expList = expList->tail; expList; expList = expList->tail) {
-//        stm = T_Seq(unNx(expList->head), stm);
-//    }
-//    return Tr_Nx(stm);
     T_exp resl = unEx(expList->head);
     for (expList = expList->tail; expList; expList = expList->tail) {
         if (expList->head) {
@@ -355,76 +345,45 @@ Tr_exp Tr_assignExp(Tr_exp left, Tr_exp right) {
 }
 
 Tr_exp Tr_ifExp(Tr_exp test, Tr_exp then, Tr_exp elsee) {
-    Tr_exp result = NULL;
     Temp_label trues = Temp_newlabel();
     Temp_label falses = Temp_newlabel();
     Temp_label join = Temp_newlabel();
-    // EM_error(0, "Tr_ifExp error is here!!! test->kind %d", test->kind);
+    
     struct Cx cond = unCx(test);
     doPatch(cond.trues, trues);
     doPatch(cond.falses, falses);
 
     if (!elsee) {
-        switch (then->kind) {
-            case Tr_nx:
-                result = Tr_Nx(T_Seq(cond.stm,
-                                T_Seq(T_Label(trues),
-                                    T_Seq(then->u.nx, T_Label(falses)))));
-                break;
-            case Tr_cx:
-                result = Tr_Nx(T_Seq(cond.stm,
-                                T_Seq(T_Label(trues),
-                                    T_Seq(then->u.cx.stm, T_Label(falses)))));
-                break;
-            case Tr_ex:
-                result = Tr_Nx(T_Seq(cond.stm,
-                                T_Seq(T_Label(trues),
-                                    T_Seq(T_Exp(unEx(then)), T_Label(falses)))));
-                break;
-            default:
-                break;
-        }
+        return Tr_Nx(T_Seq(cond.stm,
+                        T_Seq(T_Label(trues),
+                            T_Seq(unNx(then), T_Label(falses)))));
     } else {
         Temp_temp r = Temp_newtemp();
         T_stm joinJump = T_Jump(T_Name(join), Temp_LabelList(join, NULL));
-        T_stm thenStm, elseStm;
 
         switch (then->kind) {
             case Tr_nx:
-                thenStm = then->u.nx;
-                break;
+                return Tr_Nx(T_Seq(cond.stm,
+                            T_Seq(T_Label(trues),
+                                T_Seq(unNx(then),
+                                    T_Seq(joinJump,
+                                        T_Seq(T_Label(falses),
+                                            T_Seq(unNx(elsee),
+                                                T_Label(join))))))));
             case Tr_cx:
-                thenStm = then->u.cx.stm;
-                break;
             case Tr_ex:
-                thenStm = T_Exp(then->u.ex);
-                break;
+                return Tr_Ex(T_Eseq(T_Seq(cond.stm,
+                                T_Seq(T_Label(trues),
+                                    T_Seq(T_Move(T_Temp(r), unEx(then)),
+                                        T_Seq(joinJump,
+                                            T_Seq(T_Label(falses),
+                                                T_Seq(T_Move(T_Temp(r), unEx(elsee)),
+                                                    T_Label(join))))))),
+                                                        T_Temp(r)));
             default:
-                break;
+                assert(0);
         }
-        switch (elsee->kind) {
-            case Tr_nx:
-                elseStm = elsee->u.nx;
-                break;
-            case Tr_cx:
-                elseStm = elsee->u.cx.stm;
-                break;
-            case Tr_ex:
-                elseStm = T_Exp(elsee->u.ex);
-                break;
-            default:
-                break;
-        }
-        
-        result = Tr_Ex(T_Eseq(cond.stm,
-                        T_Eseq(T_Label(trues),
-                            T_Eseq(thenStm,
-                                T_Eseq(joinJump,
-                                    T_Eseq(T_Label(falses),
-                                        T_Eseq(elseStm,
-                                            T_Eseq(joinJump, T_Temp(r)))))))));
     }
-    return result;
 }
 
 // Tr_exp Tr_whileExp(Tr_exp test, Tr_exp body) {
@@ -445,12 +404,11 @@ Tr_exp Tr_ifExp(Tr_exp test, Tr_exp then, Tr_exp elsee) {
 
 Tr_exp Tr_whileExp(Tr_exp test, Tr_exp body, Tr_exp done) {
     Temp_label testl = Temp_newlabel(), bodyl = Temp_newlabel();
-    return Tr_Nx(T_Seq(T_Jump(T_Name(testl), Temp_LabelList(testl, NULL)),
-                    T_Seq(T_Label(bodyl),
-                        T_Seq(unNx(body),
-                            T_Seq(T_Label(testl),
-                                T_Seq(T_Cjump(T_eq, unEx(test), T_Const(0), 
-                                        unEx(done)->u.NAME, bodyl),
+    return Tr_Nx(T_Seq(T_Label(testl),
+                    T_Seq(T_Cjump(T_eq, unEx(test), T_Const(0), unEx(done)->u.NAME, bodyl),
+                        T_Seq(T_Label(bodyl),
+                            T_Seq(unNx(body),
+                                T_Seq(T_Jump(T_Name(testl), Temp_LabelList(testl, NULL)),
                                     T_Label(unEx(done)->u.NAME)))))));
 }
 

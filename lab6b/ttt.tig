@@ -1,0 +1,8 @@
+let 
+    var a := 1
+    /*var i := 2
+    function skipto() = 
+        while i < 3
+            do i := 4*/
+in
+end

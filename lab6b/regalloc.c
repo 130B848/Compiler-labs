@@ -11,10 +11,13 @@
 #include "liveness.h"
 #include "regalloc.h"
 #include "table.h"
-
+#include "flowgraph.h"
 
 struct RA_result RA_regAlloc(F_frame f, AS_instrList il) {
 	//your code here.
 	struct RA_result ret;
+    G_graph flowGraph = FG_AssemFlowGraph(il);
+    struct Live_graph liveGraph = Live_liveness(flowGraph);
+    struct COL_result color = COL_color(liveGraph.graph, F_tempMap, F_registers());
 	return ret;
 }

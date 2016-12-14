@@ -85,7 +85,7 @@ static void format(char *result, string assem,
 		   AS_targets jumps, Temp_map m)
 {
 
-  fprintf(stdout, "a format: assem=%s, dst=%p, src=%p\n", assem, dst, src);
+  //fprintf(stdout, "a format: assem=%s, dst=%p, src=%p\n", assem, dst, src);
   char *p;
   int i = 0; /* offset to result string */
   for(p = assem; p && *p != '\0'; p++){
@@ -116,7 +116,7 @@ static void format(char *result, string assem,
       }}
     else {result[i] = *p; i++; }}
   result[i] = '\0';
-  fprintf(stdout, "result=%s\n", result);
+  fprintf(stdout, " %s\n", result);
 }
 
 
@@ -138,9 +138,9 @@ void AS_print(FILE *out, AS_instr i, Temp_map m)
     fprintf(out, "%s", r);
     break;
   }
-  if (i) {
-    fprintf(stdout, "not null pointer in AS_print\n");
-  }
+  //if (i) {
+  //  fprintf(stdout, "not null pointer in AS_print\n");
+  //}
 }
 
 /* c should be COL_color; temporarily it is not */

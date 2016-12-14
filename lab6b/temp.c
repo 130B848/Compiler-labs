@@ -92,6 +92,14 @@ Temp_tempList Temp_TempList(Temp_temp h, Temp_tempList t)
  return p;
 }
 
+int Temp_listSize(Temp_tempList tl) {
+    int i = 0;
+    for (; tl; tl = tl->tail) {
+        i++;
+    }
+    return i;
+}
+
 Temp_labelList Temp_LabelList(Temp_label h, Temp_labelList t)
 {Temp_labelList p = (Temp_labelList) checked_malloc(sizeof (*p));
  p->head=h; p->tail=t;
@@ -110,4 +118,77 @@ void Temp_dumpMap(FILE *out, Temp_map m) {
      fprintf(out,"---------\n");
      Temp_dumpMap(out,m->under);
   }
+}
+
+bool Temp_isEqual(Temp_tempList left, Temp_tempList right) {
+    if (!left && !right) {
+        return TRUE;
+    }
+
+    Temp_tempList iter, stay = right;
+    bool result = FALSE;
+
+    for (; left && right; left = left->tail, right = right->tail) {
+        for (iter = stay; iter; iter = iter->tail) {
+            if (left->head == iter->head) {
+                result = TRUE;
+                break;
+            }
+        }
+        if (!result) {
+            return FALSE;
+        }
+    }
+
+    if (left || right) {
+        result = FALSE;
+    }
+    return result;
+}
+
+Temp_tempList Temp_union(Temp_tempList left, Temp_tempList right) {
+    Temp_tempList unionn = Temp_deepCopy(left), iter,  tmp;
+    for (iter = right; iter; iter = iter->tail) {
+        for (tmp = left; tmp; tmp = tmp->tail) {
+            if (tmp->head->num == iter->head->num) {
+                break;
+            }
+        }
+        if (!tmp) {
+            unionn = Temp_TempList(iter->head, unionn);
+        }
+    }
+    return unionn;
+}
+
+Temp_tempList Temp_subtraction(Temp_tempList left, Temp_tempList right) {
+    Temp_tempList subtraction = NULL, iter, tmp;
+    for (iter = left; iter; iter = iter->tail) {
+        for (tmp = right; tmp; tmp = tmp->tail) {
+            if (tmp->head->num == iter->head->num) {
+                break;
+            }
+        }
+        if (!tmp) {
+            subtraction = Temp_TempList(iter->head, subtraction);
+        }
+    }
+    return subtraction;
+}
+
+Temp_tempList Temp_deepCopy(Temp_tempList origin) {
+    Temp_tempList copy = NULL, iter;
+    for (iter = origin; iter; iter = iter->tail) {
+        copy = Temp_TempList(iter->head, copy);
+    }
+    return copy;
+}
+
+void Temp_printList(Temp_tempList tl) {
+    printf("Elements: ");
+    Temp_tempList iter = tl;
+    for (; tl; tl = tl->tail) {
+        printf("%d ", tl->head->num);
+    }
+    printf("\n");
 }

@@ -12,6 +12,7 @@ Temp_temp Temp_newtemp(void);
 typedef struct Temp_tempList_ *Temp_tempList;
 struct Temp_tempList_ { Temp_temp head; Temp_tempList tail;};
 Temp_tempList Temp_TempList(Temp_temp h, Temp_tempList t);
+int Temp_listSize(Temp_tempList tl);
 
 typedef S_symbol Temp_label;
 Temp_label Temp_newlabel(void);
@@ -30,5 +31,12 @@ string Temp_look(Temp_map m, Temp_temp t);
 void Temp_dumpMap(FILE *out, Temp_map m);
 
 Temp_map Temp_name(void);
+
+bool Temp_isEqual(Temp_tempList left, Temp_tempList right);
+Temp_tempList Temp_union(Temp_tempList left, Temp_tempList right);
+Temp_tempList Temp_subtraction(Temp_tempList left, Temp_tempList right);
+Temp_tempList Temp_deepCopy(Temp_tempList origin);
+
+void Temp_printList(Temp_tempList tl);
 
 #endif
