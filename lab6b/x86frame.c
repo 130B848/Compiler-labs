@@ -77,8 +77,8 @@ static Temp_tempList callersaves() {
     if (!F_tempMap) {
         F_tempMap = Temp_empty();
     }
-    //Temp_enter(F_tempMap, ecx, "ecx");
-    //Temp_enter(F_tempMap, edx, "edx");
+    Temp_enter(F_tempMap, ecx, "ecx");
+    Temp_enter(F_tempMap, edx, "edx");
     return Temp_TempList(F_RV(), Temp_TempList(ecx, Temp_TempList(edx, NULL)));
 }
 
@@ -87,9 +87,9 @@ static Temp_tempList calleesaves() {
     if (!F_tempMap) {
         F_tempMap = Temp_empty();
     }
-    //Temp_enter(F_tempMap, ebx, "ebx");
-    //Temp_enter(F_tempMap, edi, "edi");
-    //Temp_enter(F_tempMap, esi, "esi");
+    Temp_enter(F_tempMap, ebx, "ebx");
+    Temp_enter(F_tempMap, edi, "edi");
+    Temp_enter(F_tempMap, esi, "esi");
     return Temp_TempList(ebx, Temp_TempList(edi, Temp_TempList(esi, NULL)));
 }
 
@@ -203,6 +203,40 @@ T_exp F_externalCall(string s, T_expList args) {
 }
 
 T_stm F_procEntryExit1(F_frame frame, T_stm stm) {
+    //F_accessList iter;
+    //for (iter = frame->formals; iter; iter = iter->tail) {
+    //    stm = T_Seq(T_Move(T_Temp(F_FP()), T_Temp(iter->head)), stm);
+    //}
+
+    //F_access fpAcc = F_allocLocal(frame, TRUE);
+    //F_access raAcc = F_allocLocal(frame, TRUE);
+    //Temp_tempList calleeTmp = calleesaves();
+    //F_accessList calleeAcc = (F_accessList)checked_malloc(
+    //                                Temp_listSize(calleeTmp) * sizeof(struct F_accessList_));
+    //int i = 0;
+    //for (; calleeTmp; i++, calleeTmp = calleeTmp->tail) {
+    //    calleeAcc[i] = F_allocLocal(frame, TRUE);
+    //    stm = T_Seq(T_Move(T_Exp(F_Exp(calleeTmp, T_Temp(F_FP()))), 
+    //                        T_Temp(calleeTmp->head)), stm);
+    //}
+
+    //// stm = T_Seq(T_Move(T_Exp(F_Exp(raAcc, T_Temp(F_FP()))), T_Temp(F_RA())), stm); 
+    //
+    //stm = T_Seq(T_Move(T_Temp(F_FP()), 
+    //            T_Binop(T_plus, T_Temp(F_SP()), T_Const(frame->frameSize - F_wordSize))), stm);
+
+    //stm = T_Seq(T_Move(T_Exp(F_Exp(fpAcc, T_Temp(F_SP()))), T_Temp(F_FP())), stm);
+
+    //calleeTmp = calleesaves();
+    //for (i = 0; calleeTmp; i++, calleeTmp = calleeTmp->tail) {
+    //    stm = T_Seq(stm, T_Move(T_Temp(calleeTmp->head), 
+    //                        T_Exp(F_Exp(calleeAcc[i], T_Temp(F_FP())))));
+    //}
+
+    //// stm = T_Seq(stm, T_Move(T_Temp(F_RA()), T_Exp(F_Exp(raAcc, T_Temp(F_FP())))));
+
+    //stm = T_Seq(stm, T_Move(T_Temp(F_FP()), T_Exp(F_Exp(fpAcc, T_Temp(F_SP())))));
+
     return stm;
 }
 

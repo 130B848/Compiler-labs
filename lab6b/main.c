@@ -36,7 +36,7 @@ static void doProc(FILE *out, F_frame frame, T_stm body)
 
  stmList = C_linearize(body);
  stmList = C_traceSchedule(C_basicBlocks(stmList));
- /* printStmList(stdout, stmList);*/
+ //printStmList(stdout, stmList);
  iList  = F_codegen(frame, stmList); /* 9 */
 
  struct RA_result ra = RA_regAlloc(frame, iList);  /* 10, 11 */
@@ -74,11 +74,12 @@ int main(int argc, string *argv)
    sprintf(outfile, "%s.s", argv[1]);
    out = fopen(outfile, "w");
    /* Chapter 8, 9, 10, 11 & 12 */
-   for (;frags;frags=frags->tail)
+   for (;frags;frags=frags->tail) {
      if (frags->head->kind == F_procFrag) 
        doProc(out, frags->head->u.proc.frame, frags->head->u.proc.body);
      else if (frags->head->kind == F_stringFrag) 
        fprintf(out, "%s\n", frags->head->u.stringg.str);
+   }
 
    fclose(out);
    return 0;

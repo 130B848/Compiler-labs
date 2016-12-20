@@ -16,7 +16,8 @@ struct COL_result COL_color(G_graph ig, Temp_map initial, Temp_tempList regs) {
 	struct COL_result ret;
     ret.coloring = Temp_empty();
  
-    Temp_dumpMap(stdout, initial);
+    //Temp_dumpMap(stdout, initial);
+    //printf("======================================================================\n");
 
     int number = 0;
     G_nodeList stackTop = NULL;
@@ -27,12 +28,13 @@ struct COL_result COL_color(G_graph ig, Temp_map initial, Temp_tempList regs) {
         number++;
         //get the corresponding temporary of the node
         Temp_temp temp = Live_gtemp(iter->head);
-        printf("temp = %d\n", temp);
         //if temp has been assigned registers
         if (!Temp_look(initial, temp)) {
             number--;
             stackTop = G_NodeList(iter->head, stackTop); //push node into stack
             Temp_enter(ret.coloring, temp, (string)temp); //push temp into map, their reg is themselves
+            //Temp_dumpMap(stdout, ret.coloring);
+            //printf("====================================================================\n");
             //delete all the edge out from this node
             G_nodeList adj;
             for (adj = G_succ(iter->head); adj; adj = adj->tail) {
@@ -49,11 +51,13 @@ struct COL_result COL_color(G_graph ig, Temp_map initial, Temp_tempList regs) {
         //traverse each temporay node again
         G_nodeList iter;
         for (iter = G_nodes(ig); iter; iter = iter->tail) {
-            printf("init.tempMap = %d\n", Temp_look(initial, Live_gtemp(iter->head)));
+            //printf("init.tempMap = %d\n", Temp_look(initial, Live_gtemp(iter->head)));
+            //printf("G_inNodeList = %d\n", G_inNodeList(iter->head, stackTop));
+            //printf("=============================================================\n");
             if (!Temp_look(initial, Live_gtemp(iter->head)) &&
                     !G_inNodeList(iter->head, stackTop)) {
                 int num = outDegree(iter->head);
-                printf("out degree = %d\n", num);
+                //printf("out degree = %d\n", num);
                 if (max < num && num < Temp_listSize(regs)) { 
                     //find a max out-degree and small than reg num
                     max = num;

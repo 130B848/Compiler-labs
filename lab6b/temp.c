@@ -71,16 +71,19 @@ Temp_map Temp_layerMap(Temp_map over, Temp_map under) {
       return under;
   else return newMap(over->tab, Temp_layerMap(over->under, under));
 }
-
+//-x626e70
 void Temp_enter(Temp_map m, Temp_temp t, string s) {
   assert(m && m->tab);
   TAB_enter(m->tab,t,s);
 }
 
 string Temp_look(Temp_map m, Temp_temp t) {
+  //Temp_dumpMap(stdout, m);
+  //printf("======================================================================\n");
   string s;
   assert(m && m->tab);
   s = TAB_look(m->tab, t);
+  //printf("Temp_look s = %s\n", s);
   if (s) return s;
   else if (m->under) return Temp_look(m->under, t);
   else return NULL;

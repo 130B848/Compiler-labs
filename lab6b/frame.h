@@ -52,7 +52,7 @@ T_exp F_externalCall(string s, T_expList args);
 //F_frag F_string(Temp_label lab, string str);
 //F_frag F_newProcFrag(T_stm body, F_frame frame);
 T_stm F_procEntryExit1(F_frame frame, T_stm stm);
-//AS_instrList F_procEntryExit2(AS_instrList body);
-//AS_proc F_procEntryExit3(F_frame frame =, AS_instrList body);
+AS_instrList F_procEntryExit2(AS_instrList body);
+AS_proc F_procEntryExit3(F_frame frame, AS_instrList body);
 
 #endif

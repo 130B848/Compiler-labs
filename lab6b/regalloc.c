@@ -19,5 +19,6 @@ struct RA_result RA_regAlloc(F_frame f, AS_instrList il) {
     G_graph flowGraph = FG_AssemFlowGraph(il);
     struct Live_graph liveGraph = Live_liveness(flowGraph);
     struct COL_result color = COL_color(liveGraph.graph, F_tempMap, F_registers());
+    ret.coloring = color.coloring;
 	return ret;
 }

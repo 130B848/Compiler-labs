@@ -105,7 +105,7 @@ static Temp_temp munchExp(T_exp e) {
             return munchExp(e->u.ESEQ.exp);
         }
         case T_NAME: {
-            Temp_enter(F_tempMap, r, Temp_labelstring(e->u.NAME));
+            sprintf(asm_str, "mov %s, `d0\n", Temp_labelstring(e->u.NAME));
             return r;
         }
         case T_CONST: {

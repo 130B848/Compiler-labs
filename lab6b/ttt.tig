@@ -1,8 +1,11 @@
 let 
-    var a := 1
-    /*var i := 2
-    function skipto() = 
-        while i < 3
-            do i := 4*/
+    var a := 233
 in
 end
+
+/*
+MOVE(MEM(BINOP(+, 
+                MEM(BINOP(+, TEMP(t100), CONST(0))), 
+                CONST(4))
+        ), COSNT(1))
+*/

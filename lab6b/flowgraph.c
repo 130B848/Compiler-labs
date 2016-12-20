@@ -50,6 +50,7 @@ bool FG_isMove(G_node n) {
 
 G_graph FG_AssemFlowGraph(AS_instrList il) {
     TAB_table labels = TAB_empty();
+    //printf("FG_AssemFlowGraph labels: 0x%x\n", labels);
     G_graph graph = G_Graph();
 
     //add node and label
@@ -128,4 +129,6 @@ G_graph FG_AssemFlowGraph(AS_instrList il) {
 //    for (; nodeList; nodeList = nodeList->tail) {
 //        FG_addJumpEdge(labels, nodeList->head);
 //    }
+//
+//    return graph;
 //}

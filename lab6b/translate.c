@@ -489,7 +489,6 @@ static patchList joinPatch(patchList first, patchList second) {
 
 static F_fragList fragList = NULL;
 void Tr_procEntryExit(Tr_level level, Tr_exp body, Tr_accessList formals) {
-    // EM_error(0, "Tr_procEntryExit");
     F_frag procFrag = F_ProcFrag(unNx(body), level->frame);
     fragList = F_FragList(procFrag, fragList);
 }
