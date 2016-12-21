@@ -12,7 +12,8 @@
 /*Lab5: Your implementation here.*/
 struct F_frame_ {
     F_accessList formals;
-    F_accessList locals;
+    T_stmList saveArgs;
+    Temp_tempList argRegs;
     /* TODO: instructions required to implement the "view shift" */
     int frameSize;
     Temp_label name;
@@ -118,14 +119,14 @@ T_exp F_Exp(F_access acc, T_exp framePtr) {
 }
 
 F_access F_allocLocal(F_frame f, bool escape) {
+    printf("allocLocal\n");
     F_access acc;
     if (escape) {
         acc = InFrame(f->frameSize);
-        f->frameSize += F_wordSize;
+        f->frameSize -= F_wordSize;
     } else {
         acc = InReg(Temp_newtemp());
     }
-    f->locals = F_AccessList(acc, f->locals);
     return acc;
 }
 
@@ -177,18 +178,25 @@ Temp_temp F_RV(void) {
 
 F_frame F_newFrame(Temp_label name, U_boolList formals) {
     F_frame f = (F_frame)checked_malloc(sizeof(struct F_frame_));
-    f->name = name;
     f->formals = NULL;
-    F_access tmp = NULL;
+    f->frameSize = 0;
+    f->name = name;
+    
+    Temp_tempList argReg = f->argRegs;
+    F_access a;
     for (; formals; formals = formals->tail) {
-        if (!formals->head) {
-            tmp = InReg(Temp_newtemp());
-        } else {
-            tmp = InFrame(f->frameSize);
-            f->frameSize += F_wordSize;
+        a = F_allocLocal(f, formals->head);
+        f->formals = F_AccessList(a, f->formals);
+        if (argReg) {
+            if (a->kind == inReg) {
+                f->saveArgs = T_StmList(T_Move(T_Temp(a->u.reg), T_Temp(argReg->head)),
+                                        f->saveArgs);
+            } else {
+                f->saveArgs = T_StmList(T_Move(T_Mem(T_Binop(T_plus, T_Temp(F_FP()), 
+                                T_Const(a->u.offset))), T_Temp(argReg->head)), f->saveArgs);
+            }
+            argReg = argReg->tail;
         }
-
-        f->formals = F_AccessList(tmp, f->formals);
     }
     return f;
 }
@@ -203,39 +211,39 @@ T_exp F_externalCall(string s, T_expList args) {
 }
 
 T_stm F_procEntryExit1(F_frame frame, T_stm stm) {
-    //F_accessList iter;
-    //for (iter = frame->formals; iter; iter = iter->tail) {
-    //    stm = T_Seq(T_Move(T_Temp(F_FP()), T_Temp(iter->head)), stm);
-    //}
+    T_stmList iter;
+    for (iter = frame->saveArgs; iter; iter = iter->tail) {
+        stm = T_Seq(T_Move(T_Temp(F_FP()), iter->head), stm);
+    }
 
-    //F_access fpAcc = F_allocLocal(frame, TRUE);
-    //F_access raAcc = F_allocLocal(frame, TRUE);
-    //Temp_tempList calleeTmp = calleesaves();
-    //F_accessList calleeAcc = (F_accessList)checked_malloc(
-    //                                Temp_listSize(calleeTmp) * sizeof(struct F_accessList_));
-    //int i = 0;
-    //for (; calleeTmp; i++, calleeTmp = calleeTmp->tail) {
-    //    calleeAcc[i] = F_allocLocal(frame, TRUE);
-    //    stm = T_Seq(T_Move(T_Exp(F_Exp(calleeTmp, T_Temp(F_FP()))), 
-    //                        T_Temp(calleeTmp->head)), stm);
-    //}
+    F_access fpAcc = F_allocLocal(frame, TRUE);
+    F_access raAcc = F_allocLocal(frame, TRUE);
+    Temp_tempList calleeTmp = calleesaves();
+    F_accessList calleeAcc = (F_accessList)checked_malloc(
+                                    Temp_listSize(calleeTmp) * sizeof(struct F_accessList_));
+    int i = 0;
+    for (; calleeTmp; i++, calleeTmp = calleeTmp->tail) {
+        calleeAcc[i] = F_allocLocal(frame, TRUE);
+        stm = T_Seq(T_Move(T_Exp(F_Exp(calleeTmp, T_Temp(F_FP()))), 
+                            T_Temp(calleeTmp->head)), stm);
+    }
 
-    //// stm = T_Seq(T_Move(T_Exp(F_Exp(raAcc, T_Temp(F_FP()))), T_Temp(F_RA())), stm); 
-    //
-    //stm = T_Seq(T_Move(T_Temp(F_FP()), 
-    //            T_Binop(T_plus, T_Temp(F_SP()), T_Const(frame->frameSize - F_wordSize))), stm);
+    // stm = T_Seq(T_Move(T_Exp(F_Exp(raAcc, T_Temp(F_FP()))), T_Temp(F_RA())), stm); 
+    
+    stm = T_Seq(T_Move(T_Temp(F_FP()), 
+                T_Binop(T_plus, T_Temp(F_SP()), T_Const(frame->frameSize - F_wordSize))), stm);
 
-    //stm = T_Seq(T_Move(T_Exp(F_Exp(fpAcc, T_Temp(F_SP()))), T_Temp(F_FP())), stm);
+    stm = T_Seq(T_Move(T_Exp(F_Exp(fpAcc, T_Temp(F_SP()))), T_Temp(F_FP())), stm);
 
-    //calleeTmp = calleesaves();
-    //for (i = 0; calleeTmp; i++, calleeTmp = calleeTmp->tail) {
-    //    stm = T_Seq(stm, T_Move(T_Temp(calleeTmp->head), 
-    //                        T_Exp(F_Exp(calleeAcc[i], T_Temp(F_FP())))));
-    //}
+    calleeTmp = calleesaves();
+    for (i = 0; calleeTmp; i++, calleeTmp = calleeTmp->tail) {
+        stm = T_Seq(stm, T_Move(T_Temp(calleeTmp->head), 
+                            T_Exp(F_Exp(calleeAcc[i], T_Temp(F_FP())))));
+    }
 
-    //// stm = T_Seq(stm, T_Move(T_Temp(F_RA()), T_Exp(F_Exp(raAcc, T_Temp(F_FP())))));
+    // stm = T_Seq(stm, T_Move(T_Temp(F_RA()), T_Exp(F_Exp(raAcc, T_Temp(F_FP())))));
 
-    //stm = T_Seq(stm, T_Move(T_Temp(F_FP()), T_Exp(F_Exp(fpAcc, T_Temp(F_SP())))));
+    stm = T_Seq(stm, T_Move(T_Temp(F_FP()), T_Exp(F_Exp(fpAcc, T_Temp(F_SP())))));
 
     return stm;
 }

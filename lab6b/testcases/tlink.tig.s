@@ -1,44 +1,60 @@
 BEGIN function
 L15
-mov $0x0, d
+add $0x0, d
 mov 0x0(d), d
 mov d, d
-mov $0x2, d
-push d
-mov $0x0, n
-mov 0x0(n), m
+mov L12, l
+mov $0x2, m
 push m
-call k
-mov k, e
+add $0x4, q
+mov 0x4(q), p
+add $0x0, o
+mov 0x0(o), n
+push n
+call l
+mov l, e
+mov L0, x
 push e
 push d
-call t
-jmp w
+call x
+mov L14, {
+jmp {
 L14
 
 END function
 
 BEGIN function
 L17
-mov $0x3, Ä
-push Ä
-mov $0x4, Ç
-mov 0x4(Ç), Å
-push Å
-call 
-jmp É
+mov L13, É
+mov $0x3, Ñ
+push Ñ
+add $0x4, à
+mov 0x4(à), á
+add $0x4, Ü
+mov 0x4(Ü), Ö
+push Ö
+call É
+mov L16, ä
+jmp ä
 L16
 
 END function
 
 BEGIN function
 L19
-mov $0x0, ã
-mov 0x0(ã), ä
-mov $0x0, ç
-mov 0x0(ç), å
-add å, â
-jmp é
+add $0x4, î
+mov 0x4(î), ì
+add $0x0, í
+mov 0x0(í), ë
+add $0x4, õ
+mov 0x4(õ), ö
+add $0x4, ô
+mov 0x4(ô), ò
+add $0x0, ó
+mov 0x0(ó), ñ
+add ñ, ê
+mov L18, ù
+jmp ù
 L18
 
 END function

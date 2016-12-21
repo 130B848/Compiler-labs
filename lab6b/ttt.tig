@@ -2,10 +2,3 @@ let
     var a := 233
 in
 end
-
-/*
-MOVE(MEM(BINOP(+, 
-                MEM(BINOP(+, TEMP(t100), CONST(0))), 
-                CONST(4))
-        ), COSNT(1))
-*/

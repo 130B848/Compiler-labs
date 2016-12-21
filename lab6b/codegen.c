@@ -56,6 +56,7 @@ static Temp_temp munchExp(T_exp e) {
     Temp_temp r = Temp_newtemp();
     char asm_str[100];
 
+    // printf("munchExp e->kind %d\n", e->kind);
     switch (e->kind) {
         case T_BINOP: {
             T_exp left = e->u.BINOP.left, right = e->u.BINOP.right;
@@ -80,12 +81,13 @@ static Temp_temp munchExp(T_exp e) {
         }
         case T_MEM: {
             T_exp mem = e->u.MEM;
+            printf("T_MEM mem->kind = %d\n", mem->kind);
             if (mem->kind == T_BINOP && mem->u.BINOP.op == T_plus) { /* MEM(BINOP(+, CONST, e) */
                 T_exp left = mem->u.BINOP.left, right = mem->u.BINOP.right;
                 T_exp ct = (left->kind == T_CONST) ? left : right;
                 sprintf(asm_str, "mov 0x%x(`s0), `d0\n", ct->u.CONST);
                 emit(AS_Oper(String(asm_str), Temp_TempList(r, NULL),
-                                          Temp_TempList(munchExp(ct), NULL),
+                                          Temp_TempList(munchExp(mem), NULL),
                                           NULL));
             } else if (mem->kind == T_CONST) {
                 sprintf(asm_str, "mov (0x%x), `d0\n", mem->u.CONST);
@@ -106,10 +108,12 @@ static Temp_temp munchExp(T_exp e) {
         }
         case T_NAME: {
             sprintf(asm_str, "mov %s, `d0\n", Temp_labelstring(e->u.NAME));
+            emit(AS_Oper(String(asm_str), Temp_TempList(r, NULL), NULL, NULL));
             return r;
         }
         case T_CONST: {
             sprintf(asm_str, "mov $0x%x, `d0\n", e->u.CONST);
+            printf("T_CONST asm_str = %s\n", asm_str);
             emit(AS_Oper(String(asm_str), Temp_TempList(r, NULL), NULL, NULL));
             return r;
         }
@@ -162,6 +166,7 @@ static inline string cmp2asm(T_relOp op) {
 static void munchStm(T_stm s) {
     char asm_str[100];
 
+    printf("munchStm s->kind %d\n", s->kind);
     switch (s->kind) {
         case T_SEQ: {
             munchStm(s->u.SEQ.left);

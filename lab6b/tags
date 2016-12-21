@@ -133,6 +133,10 @@ A_varExp	absyn.h	/^      {enum {A_varExp, A_nilExp, A_intExp, A_stringExp, A_cal
 A_var_	absyn.h	/^struct A_var_$/;"	s
 A_whileExp	absyn.h	/^	       A_whileExp, A_forExp, A_breakExp, A_letExp, A_arrayExp} kind;$/;"	e	enum:A_exp_::__anon6
 BEGIN	lex.yy.c	125;"	d	file:
+BEGIN	testcases/dec2bin.tig.s	/^BEGIN function$/;"	l
+BEGIN	testcases/tif.tig.s	/^BEGIN function$/;"	l
+BEGIN	testcases/tlink.tig.s	/^BEGIN function$/;"	l
+BEGIN	ttt.tig.s	/^BEGIN function$/;"	l
 BINOP	tree.h	/^	      union {struct {T_binOp op; T_exp left, right;} BINOP;$/;"	m	union:T_exp_::__anon47	typeref:struct:T_exp_::__anon47::__anon48
 BREAK	y.tab.c	/^    BREAK = 296,$/;"	e	enum:yytokentype	file:
 BREAK	y.tab.c	204;"	d	file:
@@ -324,7 +328,30 @@ InReg	x86frame.c	/^static F_access InReg(Temp_temp reg) {$/;"	f	file:
 IntList	errormsg.c	/^typedef struct intList {int i; struct intList *rest;} *IntList;$/;"	t	typeref:struct:intList	file:
 JUMP	tree.h	/^		      struct {T_exp exp; Temp_labelList jumps;} JUMP;$/;"	m	union:T_stm_::__anon41	typeref:struct:T_stm_::__anon41::__anon43
 L1	hello.tig.s	/^L1:$/;"	l
+L12	ttt.tig.s	/^L12$/;"	l
+L13	testcases/tif.tig.s	/^L13$/;"	l
+L13	ttt.tig.s	/^L13$/;"	l
+L14	testcases/dec2bin.tig.s	/^L14$/;"	l
+L14	testcases/tif.tig.s	/^L14$/;"	l
+L14	testcases/tlink.tig.s	/^L14$/;"	l
+L15	testcases/dec2bin.tig.s	/^L15$/;"	l
+L15	testcases/tif.tig.s	/^L15$/;"	l
+L15	testcases/tlink.tig.s	/^L15$/;"	l
+L16	testcases/tif.tig.s	/^L16$/;"	l
+L16	testcases/tlink.tig.s	/^L16$/;"	l
+L17	testcases/tif.tig.s	/^L17$/;"	l
+L17	testcases/tlink.tig.s	/^L17$/;"	l
+L18	testcases/tif.tig.s	/^L18$/;"	l
+L18	testcases/tlink.tig.s	/^L18$/;"	l
+L19	testcases/tif.tig.s	/^L19$/;"	l
+L19	testcases/tlink.tig.s	/^L19$/;"	l
 L2	hello.tig.s	/^L2:$/;"	l
+L25	testcases/dec2bin.tig.s	/^L25$/;"	l
+L26	testcases/dec2bin.tig.s	/^L26$/;"	l
+L27	testcases/dec2bin.tig.s	/^L27$/;"	l
+L28	testcases/dec2bin.tig.s	/^L28$/;"	l
+L29	testcases/dec2bin.tig.s	/^L29$/;"	l
+L30	testcases/dec2bin.tig.s	/^L30$/;"	l
 LABEL	assem.h	/^		      struct {string assem; Temp_label label;} LABEL;$/;"	m	union:AS_instr_::__anon24	typeref:struct:AS_instr_::__anon24::__anon26
 LABEL	tree.h	/^		      Temp_label LABEL;$/;"	m	union:T_stm_::__anon41
 LBRACE	y.tab.c	/^    LBRACE = 268,$/;"	e	enum:yytokentype	file:
@@ -796,12 +823,25 @@ absyn_root	y.tab.c	/^A_exp absyn_root;$/;"	v
 access	env.h	/^            Tr_access access;$/;"	m	struct:E_enventry_::__anon29::__anon30
 access	translate.c	/^   F_access access;$/;"	m	struct:Tr_access_	file:
 actual_ty	semant.c	/^Ty_ty actual_ty(Ty_ty ty) {$/;"	f
+add	testcases/tlink.tig.s	/^add $0x0, d$/;"	l
+add	testcases/tlink.tig.s	/^add $0x0, o$/;"	l
+add	testcases/tlink.tig.s	/^add $0x0, í$/;"	l
+add	testcases/tlink.tig.s	/^add $0x0, ó$/;"	l
+add	testcases/tlink.tig.s	/^add $0x4, q$/;"	l
+add	testcases/tlink.tig.s	/^add $0x4, Ü$/;"	l
+add	testcases/tlink.tig.s	/^add $0x4, à$/;"	l
+add	testcases/tlink.tig.s	/^add $0x4, î$/;"	l
+add	testcases/tlink.tig.s	/^add $0x4, ô$/;"	l
+add	testcases/tlink.tig.s	/^add $0x4, õ$/;"	l
+add	testcases/tlink.tig.s	/^add ñ, ê$/;"	l
+add	ttt.tig.s	/^add $0x0, g$/;"	l
 addl	hello.tig.s	/^addl %edx, %eax$/;"	l
 adjust	lex.yy.c	/^void adjust(void)$/;"	f
 allocRecord	runtime.c	/^int *allocRecord(int size)$/;"	f
 alloca	y.tab.c	380;"	d	file:
 anyErrors	errormsg.c	/^bool anyErrors= FALSE;$/;"	v
 argList	tiger.y	/^argList :   exp _argList        {$$ = A_ExpList($1, $2);}$/;"	l
+argRegs	x86frame.c	/^    Temp_tempList argRegs;$/;"	m	struct:F_frame_	file:
 args	absyn.h	/^	      struct {S_symbol func; A_expList args;} call;$/;"	m	struct:A_exp_::__anon7::__anon8
 args	tree.h	/^		     struct {T_exp fun; T_expList args;} CALL;$/;"	m	struct:T_exp_::__anon47::__anon50
 array	absyn.h	/^		     S_symbol array;$/;"	m	union:A_ty_::__anon21
@@ -827,10 +867,34 @@ body	frame.h	/^				struct {T_stm body; F_frame frame;} proc;$/;"	m	struct:F_frag
 bool	util.h	/^typedef char bool;$/;"	t
 breakExp	tiger.y	/^breakExp:   BREAK                       {$$ = A_BreakExp(EM_tokPos);}$/;"	l
 buf	lex.yy.c	/^char buf[MAXLEN];$/;"	v
-buildGraph	liveness.c	/^static void buildGraph(G_graph flow) {$/;"	f	file:
+buildGraph	liveness.c	/^static G_graph buildGraph(G_graph flow) {$/;"	f	file:
 calculateLiveness	liveness.c	/^static void calculateLiveness(G_graph flow) {$/;"	f	file:
 call	absyn.h	/^	      struct {S_symbol func; A_expList args;} call;$/;"	m	union:A_exp_::__anon7	typeref:struct:A_exp_::__anon7::__anon8
 call	hello.tig.s	/^call print$/;"	l
+call	testcases/dec2bin.tig.s	/^call f$/;"	l
+call	testcases/dec2bin.tig.s	/^call t$/;"	l
+call	testcases/dec2bin.tig.s	/^call x$/;"	l
+call	testcases/dec2bin.tig.s	/^call |$/;"	l
+call	testcases/dec2bin.tig.s	/^call Å$/;"	l
+call	testcases/dec2bin.tig.s	/^call Ö$/;"	l
+call	testcases/dec2bin.tig.s	/^call â$/;"	l
+call	testcases/dec2bin.tig.s	/^call ç$/;"	l
+call	testcases/dec2bin.tig.s	/^call í$/;"	l
+call	testcases/dec2bin.tig.s	/^call ñ$/;"	l
+call	testcases/dec2bin.tig.s	/^call ö$/;"	l
+call	testcases/dec2bin.tig.s	/^call û$/;"	l
+call	testcases/dec2bin.tig.s	/^call £$/;"	l
+call	testcases/dec2bin.tig.s	/^call ß$/;"	l
+call	testcases/dec2bin.tig.s	/^call ´$/;"	l
+call	testcases/dec2bin.tig.s	/^call Ø$/;"	l
+call	testcases/dec2bin.tig.s	/^call ¥$/;"	l
+call	testcases/dec2bin.tig.s	/^call ¬$/;"	l
+call	testcases/dec2bin.tig.s	/^call …$/;"	l
+call	testcases/tif.tig.s	/^call l$/;"	l
+call	testcases/tif.tig.s	/^call v$/;"	l
+call	testcases/tlink.tig.s	/^call l$/;"	l
+call	testcases/tlink.tig.s	/^call x$/;"	l
+call	testcases/tlink.tig.s	/^call É$/;"	l
 callExp	tiger.y	/^callExp :   ID LPAREN argList RPAREN {$$ = A_CallExp(EM_tokPos, S_Symbol($1), $3);}$/;"	l
 calleesaves	x86frame.c	/^static Temp_tempList calleesaves() {$/;"	f	file:
 callersaves	x86frame.c	/^static Temp_tempList callersaves() {$/;"	f	file:
@@ -840,6 +904,8 @@ chars	runtime.c	/^struct string {int length; unsigned char chars[1];};$/;"	m	str
 checkFor	semant.c	/^static A_exp checkFor;$/;"	v	file:
 checked_malloc	util.c	/^void *checked_malloc(int len)$/;"	f
 chr	runtime.c	/^struct string *chr(int i)$/;"	f
+cmp	testcases/dec2bin.tig.s	/^cmp Ω, ø$/;"	l
+cmp	testcases/tif.tig.s	/^cmp Ä, Ç$/;"	l
 cmp2asm	codegen.c	/^static inline string cmp2asm(T_relOp op) {$/;"	f	file:
 coloring	color.h	/^struct COL_result {Temp_map coloring; Temp_tempList spills;};$/;"	m	struct:COL_result
 coloring	regalloc.h	/^struct RA_result {Temp_map coloring; AS_instrList il;};$/;"	m	struct:RA_result
@@ -855,6 +921,8 @@ decList	y.tab.c	/^    A_decList decList;$/;"	m	union:YYSTYPE	file:
 decList	y.tab.h	/^    A_decList decList;$/;"	m	union:YYSTYPE
 decs	absyn.h	/^	      struct {A_decList decs; A_exp body;} let;$/;"	m	struct:A_exp_::__anon7::__anon15
 delete	graph.c	/^static G_nodeList delete(G_node a, G_nodeList l) {$/;"	f	file:
+div	testcases/dec2bin.tig.s	/^div $0x2, √$/;"	l
+div	testcases/dec2bin.tig.s	/^div $0x2, Ã$/;"	l
 doPatch	translate.c	/^static void doPatch(patchList tList, Temp_label label) {$/;"	f	file:
 doProc	main.c	/^static void doProc(FILE *out, F_frame frame, T_stm body)$/;"	f	file:
 do_exp	canon.c	/^static struct stmExp do_exp(T_exp exp)$/;"	f	file:
@@ -974,6 +1042,7 @@ iList	codegen.c	/^static AS_instrList iList = NULL, last = NULL;$/;"	v	file:
 ifExp	tiger.y	/^ifExp   :   IF  exp THEN exp ELSE exp {$$ = A_IfExp(EM_tokPos, $2, $4, $6);}$/;"	l
 iff	absyn.h	/^	      struct {A_exp test, then, elsee;} iff; \/* elsee is optional *\/$/;"	m	union:A_exp_::__anon7	typeref:struct:A_exp_::__anon7::__anon12
 il	regalloc.h	/^struct RA_result {Temp_map coloring; AS_instrList il;};$/;"	m	struct:RA_result
+imul	testcases/dec2bin.tig.s	/^imul $0x2, À$/;"	l
 inDegree	graph.c	/^int inDegree(G_node n)$/;"	f
 inFrame	x86frame.c	/^        inFrame, inReg$/;"	e	enum:F_access_::__anon54	file:
 inReg	x86frame.c	/^        inFrame, inReg$/;"	e	enum:F_access_::__anon54	file:
@@ -990,7 +1059,20 @@ intt	absyn.h	/^	      int intt;$/;"	m	union:A_exp_::__anon7
 isNop	canon.c	/^static bool isNop(T_stm x) $/;"	f	file:
 ival	y.tab.c	/^	int ival;$/;"	m	union:YYSTYPE	file:
 ival	y.tab.h	/^	int ival;$/;"	m	union:YYSTYPE
+jg	testcases/dec2bin.tig.s	/^jg L14$/;"	l
+jg	testcases/tif.tig.s	/^jg L13$/;"	l
 jmp	hello.tig.s	/^jmp L1$/;"	l
+jmp	testcases/dec2bin.tig.s	/^jmp l$/;"	l
+jmp	testcases/dec2bin.tig.s	/^jmp ∑$/;"	l
+jmp	testcases/dec2bin.tig.s	/^jmp ¿$/;"	l
+jmp	testcases/dec2bin.tig.s	/^jmp “$/;"	l
+jmp	testcases/tif.tig.s	/^jmp y$/;"	l
+jmp	testcases/tif.tig.s	/^jmp à$/;"	l
+jmp	testcases/tif.tig.s	/^jmp å$/;"	l
+jmp	testcases/tlink.tig.s	/^jmp {$/;"	l
+jmp	testcases/tlink.tig.s	/^jmp ä$/;"	l
+jmp	testcases/tlink.tig.s	/^jmp ù$/;"	l
+jmp	ttt.tig.s	/^jmp i$/;"	l
 joinPatch	translate.c	/^static patchList joinPatch(patchList first, patchList second) {$/;"	f	file:
 jumps	assem.h	/^			      AS_targets jumps;} OPER;$/;"	m	struct:AS_instr_::__anon24::__anon25
 jumps	tree.h	/^		      struct {T_exp exp; Temp_labelList jumps;} JUMP;$/;"	m	struct:T_stm_::__anon41::__anon43
@@ -1029,13 +1111,83 @@ linePos	errormsg.c	/^static IntList linePos=NULL;$/;"	v	file:
 linear	canon.c	/^static T_stmList linear(T_stm stm, T_stmList right)$/;"	f	file:
 liveMap	liveness.c	/^G_table liveMap;$/;"	v
 lo	absyn.h	/^	      struct {S_symbol var; A_exp lo,hi,body; bool escape;} forr;$/;"	m	struct:A_exp_::__anon7::__anon14
-locals	x86frame.c	/^    F_accessList locals;$/;"	m	struct:F_frame_	file:
 main	main.c	/^int main(int argc, string *argv)$/;"	f
 main	runtime.c	/^int main()$/;"	f
 makeFormalTyList	semant.c	/^Ty_tyList makeFormalTyList(S_table tenv, A_fieldList f){$/;"	f
 marksym	symbol.c	/^static struct S_symbol_ marksym = {"<mark>",0};$/;"	v	typeref:struct:S_symbol_	file:
 mkBlocks	canon.c	/^static C_stmListList mkBlocks(T_stmList stms, Temp_label done)$/;"	f	file:
 mksymbol	symbol.c	/^static S_symbol mksymbol(string name, S_symbol next)$/;"	f	file:
+mov	testcases/dec2bin.tig.s	/^mov $0x0, d$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x0, æ$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x0, ø$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x0, ≈$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x0, Œ$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x0, –$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x237, ®$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x237, ∞$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x315, ó$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x315, ü$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x4, $/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x4, ê$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x4, °$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x4, ≤$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x4, «$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x64, u$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0x64, }$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0xc8, Ü$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov $0xc8, é$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x0(d), d$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x0(æ), Ω$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x0(≈), ƒ$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x0(Œ), Õ$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x0(–), œ$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x4(), ~$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x4(ê), è$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x4(°), †$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x4(≤), ±$/;"	l
+mov	testcases/dec2bin.tig.s	/^mov 0x4(«), ∆$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x0, d$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x0, p$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x0, Å$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x0, ä$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x4, d$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x4, É$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x4, Ö$/;"	l
+mov	testcases/tif.tig.s	/^mov $0x9, n$/;"	l
+mov	testcases/tif.tig.s	/^mov 0x0(d), d$/;"	l
+mov	testcases/tif.tig.s	/^mov 0x0(p), o$/;"	l
+mov	testcases/tif.tig.s	/^mov 0x0(Å), Ä$/;"	l
+mov	testcases/tif.tig.s	/^mov 0x0(ä), â$/;"	l
+mov	testcases/tif.tig.s	/^mov 0x4(É), Ç$/;"	l
+mov	testcases/tif.tig.s	/^mov 0x4(Ö), Ñ$/;"	l
+mov	testcases/tif.tig.s	/^mov d, d$/;"	d
+mov	testcases/tif.tig.s	/^mov l, f$/;"	l
+mov	testcases/tif.tig.s	/^mov Ñ, e$/;"	l
+mov	testcases/tif.tig.s	/^mov â, e$/;"	l
+mov	testcases/tlink.tig.s	/^mov $0x2, m$/;"	l
+mov	testcases/tlink.tig.s	/^mov $0x3, Ñ$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x0(d), d$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x0(o), n$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x0(í), ë$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x0(ó), ñ$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x4(q), p$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x4(Ü), Ö$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x4(à), á$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x4(î), ì$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x4(ô), ò$/;"	l
+mov	testcases/tlink.tig.s	/^mov 0x4(õ), ö$/;"	l
+mov	testcases/tlink.tig.s	/^mov L0, x$/;"	l
+mov	testcases/tlink.tig.s	/^mov L12, l$/;"	l
+mov	testcases/tlink.tig.s	/^mov L13, É$/;"	l
+mov	testcases/tlink.tig.s	/^mov L14, {$/;"	l
+mov	testcases/tlink.tig.s	/^mov L16, ä$/;"	l
+mov	testcases/tlink.tig.s	/^mov L18, ù$/;"	l
+mov	testcases/tlink.tig.s	/^mov d, d$/;"	d
+mov	testcases/tlink.tig.s	/^mov l, e$/;"	l
+mov	ttt.tig.s	/^mov $0xe9, e$/;"	l
+mov	ttt.tig.s	/^mov 0x0(g), f$/;"	l
+mov	ttt.tig.s	/^mov L12, i$/;"	l
+mov	ttt.tig.s	/^mov e, 0xfffffffc(f)$/;"	l
 moves	liveness.h	/^	Live_moveList moves;$/;"	m	struct:Live_graph
 movl	hello.tig.s	/^movl $.L0, %ecx$/;"	l
 movl	hello.tig.s	/^movl $4, %edx$/;"	l
@@ -1130,6 +1282,40 @@ program	tiger.y	/^program :   exp     {absyn_root = $1;}$/;"	l
 prolog	assem.h	/^  string prolog;$/;"	m	struct:AS_proc_
 push	hello.tig.s	/^push %ebp$/;"	l
 push	hello.tig.s	/^push %ecx$/;"	l
+push	testcases/dec2bin.tig.s	/^push d$/;"	l
+push	testcases/dec2bin.tig.s	/^push u$/;"	l
+push	testcases/dec2bin.tig.s	/^push y$/;"	l
+push	testcases/dec2bin.tig.s	/^push }$/;"	l
+push	testcases/dec2bin.tig.s	/^push ~$/;"	l
+push	testcases/dec2bin.tig.s	/^push Ç$/;"	l
+push	testcases/dec2bin.tig.s	/^push Ü$/;"	l
+push	testcases/dec2bin.tig.s	/^push ä$/;"	l
+push	testcases/dec2bin.tig.s	/^push é$/;"	l
+push	testcases/dec2bin.tig.s	/^push è$/;"	l
+push	testcases/dec2bin.tig.s	/^push ì$/;"	l
+push	testcases/dec2bin.tig.s	/^push ó$/;"	l
+push	testcases/dec2bin.tig.s	/^push õ$/;"	l
+push	testcases/dec2bin.tig.s	/^push ü$/;"	l
+push	testcases/dec2bin.tig.s	/^push †$/;"	l
+push	testcases/dec2bin.tig.s	/^push §$/;"	l
+push	testcases/dec2bin.tig.s	/^push ®$/;"	l
+push	testcases/dec2bin.tig.s	/^push ¨$/;"	l
+push	testcases/dec2bin.tig.s	/^push ∞$/;"	l
+push	testcases/dec2bin.tig.s	/^push ±$/;"	l
+push	testcases/dec2bin.tig.s	/^push µ$/;"	l
+push	testcases/dec2bin.tig.s	/^push √$/;"	l
+push	testcases/dec2bin.tig.s	/^push ∆$/;"	l
+push	testcases/dec2bin.tig.s	/^push  $/;"	l
+push	testcases/tif.tig.s	/^push d$/;"	l
+push	testcases/tif.tig.s	/^push f$/;"	l
+push	testcases/tif.tig.s	/^push n$/;"	l
+push	testcases/tif.tig.s	/^push o$/;"	l
+push	testcases/tlink.tig.s	/^push d$/;"	l
+push	testcases/tlink.tig.s	/^push e$/;"	l
+push	testcases/tlink.tig.s	/^push m$/;"	l
+push	testcases/tlink.tig.s	/^push n$/;"	l
+push	testcases/tlink.tig.s	/^push Ñ$/;"	l
+push	testcases/tlink.tig.s	/^push Ö$/;"	l
 record	absyn.h	/^		     A_fieldList record;$/;"	m	union:A_ty_::__anon21
 record	absyn.h	/^	      struct {S_symbol typ; A_efieldList fields;} record;$/;"	m	union:A_exp_::__anon7	typeref:struct:A_exp_::__anon7::__anon10
 record	types.h	/^	       union {Ty_fieldList record;$/;"	m	union:Ty_ty_::__anon52
@@ -1149,6 +1335,7 @@ right	tree.h	/^		      struct {T_relOp op; T_exp left, right;$/;"	m	struct:T_stm
 right	tree.h	/^	       union {struct {T_stm left, right;} SEQ;$/;"	m	struct:T_stm_::__anon41::__anon42
 right	tree.h	/^	      union {struct {T_binOp op; T_exp left, right;} BINOP;$/;"	m	struct:T_exp_::__anon47::__anon48
 s	canon.c	/^struct stmExp {T_stm s; T_exp e;};$/;"	m	struct:stmExp	file:
+saveArgs	x86frame.c	/^    T_stmList saveArgs;$/;"	m	struct:F_frame_	file:
 seq	absyn.h	/^	      A_expList seq;$/;"	m	union:A_exp_::__anon7
 seq	canon.c	/^static T_stm seq(T_stm x, T_stm y)$/;"	f	file:
 seqExp	tiger.y	/^seqExp  :   LPAREN seqList RPAREN     {$$ = A_SeqExp(EM_tokPos, $2);}$/;"	l
@@ -1182,6 +1369,7 @@ stringExp	tiger.y	/^stringExp : STRING  {$$ = A_StringExp(EM_tokPos, $1);}$/;"	l
 stringFragList	translate.c	/^static F_fragList stringFragList = NULL;$/;"	v	file:
 stringg	absyn.h	/^	      string stringg;$/;"	m	union:A_exp_::__anon7
 stringg	frame.h	/^				struct {Temp_label label; string str;} stringg;$/;"	m	union:F_frag_::__anon33	typeref:struct:F_frag_::__anon33::__anon34
+sub	testcases/dec2bin.tig.s	/^sub œ,  $/;"	l
 subscript	absyn.h	/^		       A_exp exp;} subscript;$/;"	m	union:A_var_::__anon3	typeref:struct:A_var_::__anon3::__anon5
 substring	runtime.c	/^struct string *substring(struct string *s, int first, int n)$/;"	f
 succs	graph.c	/^  G_nodeList succs;$/;"	m	struct:G_node_	file:
